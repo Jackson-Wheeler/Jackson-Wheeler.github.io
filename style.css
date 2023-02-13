@@ -1,0 +1,89 @@
+/* CSS Style Sheet */
+/* Variables */
+:root {
+    --font: serif;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    /* font-size: 1rem; */
+    /* font-family: var(--font); */
+    /* border: 1px solid red; */
+  }
+
+/* Code */
+body {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 3fr 1fr 1.5fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    /* As a grid item (child) */
+    grid-column: 1 / 6;
+
+    /* As a grid container (parent) */
+    display: grid;
+}
+
+main {
+    grid-column: 3 / 4;
+
+    /* As a flexbox container */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+/* aside#leftSidebar {
+    grid-column: 2 / 3;
+} */
+
+aside#rightSidebar {
+    grid-column: 4 / 5;
+}
+
+footer {
+    grid-column: 1 / 6;
+}
+
+#navbar {
+    /* border: 1px solid black; */
+    align-self: top;
+
+    /* As a flexbox container */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#navbar#leftNav {
+    /* justify-self: left; */
+}
+
+#navbar#rightNav {
+    /* justify-self: right; */
+}
+
+#profileHeading {
+    justify-self: center;
+    align-self: center;
+}
+
+contact-card {
+    position: sticky;
+    top: 0px;
+}
+
+/* Contact Me - Right sidebar */
+#contactBox {
+    border: 2px solid black;
+}
