@@ -21,7 +21,7 @@
             </div>
             <div id="rightNav">
                 <a href="index.html">Home</a>
-                <a href="#education">Educ./Skills</a>
+                <a href="#education">Education/Skills</a>
                 <a href="#relevantSkills">Projects</a>
                 <a href="contact.html">Contact Me!</a>    
             </div>
@@ -29,11 +29,7 @@
     </section>
 
 
-    <header>
-        <!-- <div id="dummyNavBar">
-
-        </div>
- -->
+    <header id="mainHeader">
         <article id="profileHeading">
             <picture id="profilePic">
                 <!-- If WebP is supported -->
@@ -51,33 +47,40 @@
 
         <section id="aboutMe">
             <h2>About me</h2>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <section class="contentBorder">
+                <p>
+                    Hello! My name is Jackson Wheeler!
+                </p>
+                <br>
+                <p>
+                    Cool and intrigueing bio here. Here I will place filler text so that this looks legit. Did it work? &hearts; Hi :)
+                </p>
+                <br>
+                <p>
+                    Second paragraph of bio here. This is filler text in order to fill up space. I hope you enjoy reading about these things. Hello mom and dad! Hope you guys are doing well.
+                </p>
+            </section>
         </section>
 
         <section id="education">
             <h2>Education</h2>
-            <div id="ucsd" class="educationItem">
+            <div id="ucsd" class="educationItem contentBorder">
                 <img src="images/ucsd_logo.png" alt="UCSD logo" height="100" width="100"/>
                 <p><b>University Of California, San Diego</b></p>
                 <p>Bachelors of Science in Computer Science</p>
                 <p><em>GPA: 3.8</em></p>
             </div>
-            <div id="yonsei" class="educationItem">
+            <div id="yonsei" class="educationIte contentBorder">
                 <img src="images/yonsei_logo.jpeg" alt="Yonsei University logo" height="70" width="70" />
                 <p><b>Yonsei University, Seoul, South Korea</b></p>
-                <p>Study Abroad: Fall 2022</p>
+                <p>Exchange Program: Fall 2022</p>
             </div>
 
         </section>
 
         <section id="relevantSkills">
             <h2>Relevant Skills</h2>
-            <div id="skillsBox">
+            <div id="skillsBox" class="contentBorder">
                 <h3>Skill Category 1</h3>
                 <div class="skillList">
                     Skill 1, Skill 2, Skill 3, Skill 4
@@ -95,7 +98,7 @@
 
         <section id="projects">
             <h2>Projects</h2>
-            <section id="project1">
+            <section id="project1" class="contentBorder">
                 <h3>Team: San Diego Zoo Exhibit Navigation App</h3>
                 <figure id="project1Images">
                     <figure id="project1Img1">
@@ -131,10 +134,10 @@
     </main>
     <aside id="rightSidebar">
         <contact-card>
-            <header>
-                <h2>Contact Me!</h2>
+            <header id="contactCardHeader">
+                <h2>Contact Links</h2>
             </header>
-            <section id="contactBox">
+            <section id="contactBox" class="contentBorder">
                 <a href="mailto:jackson.n.wheeler@gmail.com" accesskey="m">
                     <img src="/images/email_logo.png" alt="Email Logo" height="20" width="20" />
                     <span class="contactLink">Email</span>
