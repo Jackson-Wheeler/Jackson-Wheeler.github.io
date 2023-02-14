@@ -98,6 +98,8 @@ body {
     /* font */
     /* font-family: var(--gen-font); */
     font-family: var(--gen-font);
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 a {
