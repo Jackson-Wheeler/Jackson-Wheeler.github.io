@@ -14,7 +14,7 @@
 
 </head>
 <body>
-    <header>
+    <section id="navbarSection">
         <nav id="navbar">
             <div id="leftNav">
                 <a href="index.html">Jackson Wheeler</a>
@@ -26,23 +26,29 @@
                 <a href="contact.html">Contact Me!</a>    
             </div>
         </nav>
+    </section>
 
+
+    <header>
+        <!-- <div id="dummyNavBar">
+
+        </div>
+ -->
         <article id="profileHeading">
-            <picture>
+            <picture id="profilePic">
                 <!-- If WebP is supported -->
-                <source srcset="/images/professional_photo_smile.webp" type="image/webp" />
+                <source srcset="/images/professional_photo_smile.webp" type="image/webp" height="205" width="164"/>
                 <!-- In all other cases -->
-                <img src="/images/professional_photo_smile.jpg" alt="profile photo" height="205" width="164" />
+                <img src="/images/professional_photo_smile.jpg" alt="profile photo" height="205" width="164"/>
             </picture>
             <h1>Jackson Wheeler</h1>
             <p>Software Engineer</p>
             <p>UCSD Computer Science Student</p>
         </article>
-
     </header>
-    <!-- <aside id="leftSidebar">
-    </aside> -->
+    
     <main>
+
         <section id="aboutMe">
             <h2>About me</h2>
             <p>
