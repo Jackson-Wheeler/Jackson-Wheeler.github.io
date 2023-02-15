@@ -44,7 +44,7 @@
     --formal-bold-font: "NanumBold", cursive;
     /* --formal-extra-bold-font: "NanumExtraBold", sans-serif; */
     /* --font-2: "HelveticaNeue"; */
-    --font-3: "HelveticaNeueThin";
+    --font-3: "HelveticaNeueThin", cursive;
 
     /* color */
     --background-color: #FAF9F6;
