@@ -138,7 +138,12 @@ a {
 }
 
 #navbarSection a {
-    /* background-color: var(--background-color); */
+    transition: all 0.2s;
+}
+
+#navbarSection a:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
 }
 
 #navbar {
@@ -216,7 +221,7 @@ h1 {
 }
 
 #profileHeading p {
-    font-family: (var(--font-3));
+    font-family: var(--font-3);
     font-weight: lighter;
     font-size: 1.15rem;
 }
@@ -298,14 +303,12 @@ main > section {
 }
 
 /* Relevant Skills */
-#relevantSkills {
-    /* font-size: 0.9em; */
+#relevantSkills h3 {
+    border-bottom: var(--box-border-lv3);
 }
 
 h3 {
     font-weight: 400;
-    /* border-bottom: var(--bottom-border); */
-    border-bottom: var(--box-border-lv3);
 }
 
 .skillSection {
@@ -351,6 +354,163 @@ h3 {
 }
 
 
+/* Projects */
+
+#projects p, #projects li {
+    font-size: 0.9em;
+}
+
+.projectHeader {
+    border-bottom: var(--box-border-lv3);
+    margin-bottom: 1vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.projectHeader p {
+    font-family: var(--formal-font);
+    font-size: 1em;
+    /* font-style: italic; */
+}
+
+
+.overviewSection {
+    margin-bottom: 2vh;
+}
+
+h4 {
+    font-weight: 400;
+    border-bottom: var(--box-border-lv2);
+    width: max-content;
+    margin-bottom: 1vh;
+}
+
+.overviewText {
+    margin: 1vh 0.5vw;
+    margin-top: 0;
+    /* border: var(--box-border); */
+}
+
+.descriptionSection {
+    margin: 2vh auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+#chessProjFigures {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#chessProjFigures figure {
+    border: 4px solid var(--gray-lv1);
+    background-color: var(--gray-lv1);
+    /* box-shadow: 2px 2px 1px var(--border-color-lv2); */
+    font-family: var(--formal-font);
+    font-size: 0.8em;
+}
+
+#chessProjFigures img {
+    width: 20rem;
+    height: 23rem;
+
+}
+
+.descriptionText {
+    margin: 1vh 0.5vw;
+    /* border: var(--box-border); */
+}
+
+.takeawaysSection {
+    margin: 2vh auto;
+}
+
+.projectFooter {
+    margin: 1.5vh auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sourceCodeLinkBox {
+    border: var(--box-border-lv2);
+    padding: 0.25em;
+    width: max-content;
+
+    overflow: hidden;
+}
+
+.sourceCodeLinkBox a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sourceCodeLinkBox img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.sourceCodeLinkBox  span {
+    padding-left: 0.25em;
+}
+
+.sourceCodeLinkBox:hover {
+    background-color: var(--background-color-darker);
+}
+
+.sourceCodeLinkBox:hover span {
+    text-decoration: underline;
+}
+
+/* Animation */
+#animationSection {
+    height: 10vh;
+
+    /* display: grid; */
+}
+
+#animationContainer {
+    overflow: hidden;
+    padding: 0.5em;
+    /* border: var(--box-border); */
+}
+
+#animationContainer p {
+    animation-duration: 3s;
+    animation-name: slide;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    width: max-content;
+    font-size: 3rem;
+    font-family: cursive;
+    font-weight: bold;
+    color: red;
+}
+
+@keyframes slide {
+    from {
+        margin-left: 0;
+    }
+  
+    to {
+        margin-left: 75%;
+      /* margin-right: 0; */
+    }
+  }
+
+
+
+
 
 /* Sidebar 2.0 */
 #rightSection {
@@ -378,7 +538,7 @@ h3 {
     justify-content: space-between;
     align-items: end;
 
-    font-size: 1.75rem;
+    font-size: 0.7rem;
 }
 
 
@@ -386,27 +546,22 @@ h3 {
     padding: 0.25rem;
     margin-right: 0.5rem;
     
-    font-size: 0;
     transition: all 0.2s;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;    
 }
 
 #sideBar > a > img {
-    /* height: 3rem; */
     height: 3rem;
     width: 3rem;
 }
 
 #sideBar > a:hover {
-    /* transform-origin: center; */
-    /* transform: scale(1.05); */
-    /* background-color: red; */
-    background-color: var(--background-color-darker);
-    /* font-size: 1em; */
+    transform: scale(1.1);
+    /* background-color: var(--background-color-darker); */
 }
 
 /* #sideBar > a > span {
@@ -433,4 +588,7 @@ h3 {
 
 footer {
     grid-column: 1 / 6;
+
+    border-top: var(--box-border);
+    padding: 1vh 1vw;
 }

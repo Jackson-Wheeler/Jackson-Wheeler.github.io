@@ -39,7 +39,7 @@
             </picture>
             <h1>Jackson Wheeler</h1>
             <p>Software Engineer</p>
-            <p>UCSD Computer Science Student</p>
+            <p>B.S. in Computer Science @ UCSD</p>
         </article>
     </header>
     
@@ -92,11 +92,11 @@
                         <tbody>
                             <tr>
                                 <th class="skillType">Languages/Tools:</th>
-                                <td><strong>Java</strong>, <strong>Python</strong>, C++; Android Studio</td>
+                                <td><strong>Java</strong>, <strong>Python</strong>, C++; git/GitHub; Android Studio</td>
                             </tr>
                             <tr>
                                 <th class="skillType">University Courses:</th>
-                                <td>Software Engineering, Algorithms, Data Structures, Object Oriented Design</td>
+                                <td>Software Engineering (incl. <strong>Agile</strong>), Algorithms, Data Structures, Object Oriented Design</td>
                             </tr>
                         </tbody>
                     </table>
@@ -167,36 +167,90 @@
 
         <section id="projects">
             <h2>Projects</h2>
-            <section id="project1" class="contentBorder">
-                <h3>Team: San Diego Zoo Exhibit Navigation App</h3>
-                <figure id="project1Images">
-                    <figure id="project1Img1">
-                        <img src="/images/placeholder.jpeg" alt="Image 1" height="200" width="100" />
-                        <figcaption>Image 1</figcaption>
-                    </figure>
-                    <figure id="project1Img2">
-                        <img src="/images/placeholder.jpeg" alt="Image 2" height="200" width="100" />
-                        <figcaption>Image 2</figcaption>
-                    </figure>
-                    <figure id="project1Img3">
-                        <img src="/images/placeholder.jpeg" alt="Image 3" height="200" width="100" />
-                        <figcaption>Image 3</figcaption>
-                    </figure>
-                </figure>
-                <section id="project1Description">
-                    <details>
-                        <summary>Quick Summary</summary>
-                        <ul>
-                            <li>Implemented <b>Agile</b> process in team of 6 to plan and deliver application meeting customer’s requirements</li>
-                            <li><b>Integrated</b> back-end team and front-end team’s code</li>
-                            <li>Established better <b>communication</b> between pair-programming teams</li>
-                        </ul>
-                    </details>
-                    <a href="https://github.com/CSE-110-Spring-2022/zooseeker-cse-110-team-4" target="_blank">
-                        <img src="/images/github_logo.png" alt="GitHub Logo" height="20" width="20" />
-                        <span class="contactLink">Source Code</span>
-                    </a>
+            <section id="chessGameProject">
+
+                <header class="projectHeader">
+                    <h3>Java Chess Game</h3>
+                    <span>Spring 2020</span>
+                </header>
+
+                <section class="projectBody contentBorder">
+
+                    <section class="overviewSection">
+                        <h4>Overview</h4>
+                        <div class="overviewText">
+                            <p>
+                                Challenged myself to utilize a new programming language, Java, to develop a functional chess game that can be run in the terminal.
+                            </p>
+                            <br>
+                            <p>
+                                Utilized inheritance and object oriented design in order to implement this program.
+                            </p>
+                        </div>
+                    </section>
+                    
+                    <section class="descriptionSection">
+                        <h4>Details</h4>
+
+                        <figure id="chessProjFigures">
+                            <figure>
+                                <picture>
+                                    <!-- If WebP is supported -->
+                                <source srcset="/images/chessGame/game_start.webp" type="image/webp" width="111" height="126"/>
+                                    <!-- In all other cases -->
+                                <img src="/images/chessGame/game_start.jpg" alt="Depiction of terminal screen at Beginning of chess game" width="111" height="126" />
+                            </picture>
+                            <figcaption>Start of Chess Game</figcaption>
+                            </figure>
+                            <figure>
+                                <picture>
+                                    <!-- If WebP is supported -->
+                                    <source srcset="/images/chessGame/game_after_move.webp" type="image/webp" width="111" height="146"/>
+                                    <!-- In all other cases -->
+                                <img src="/images/chessGame/game_after_move.jpg" alt="Depiction of terminal screen after 1 turn in chess game" width="111" height="146" />
+                            </picture>
+                            <figcaption>Taking a Move</figcaption>
+                            </figure>
+                        </figure>
+
+                        <div class="descriptionText">
+                            <p>
+                                The console outputs a visual representation of the board that will be updated after each move. To play enter the position notation of the piece you want to move and of where you want to move to. The program will ensure the move is legal before updating the board and switching whose turn it is. Note: there is no AI player, but you can play against yourself! :D
+                            </p>
+                            <br>
+                            <p>
+                                <em>Start of chess game:</em> At the beginning of the chess game the instuctions (boxed in red in the above left image), the position board (blue), and the starting position of the board (green) are all printed out
+                            </p>
+                            <br>
+                            <p>
+                                <em>Taking a move:</em> The above right image is a example of taking a move in this chess game. Note, the program rejects invalid positions and invalid moves (red underlines). After a valid move has been made a new, updated, game board is printed out (blue). Also, a list of captured enemy pieces (for the current player) are printed.
+                            </p>
+                        </div>
+
+                    </section>
+
+                    <section class="takeawaysSection">
+                        <h4>Take Aways</h4>
+                        <div class="takeawaysText">
+                            <p>First personal Java programming project:</p>
+                            <ul>
+                                <li>learned how to utilize object oriented design to organize & develop code</li>
+                                <li>gained a deeper understanding of Java through the code development and debugging process</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <div class="projectFooter">
+                        <div class="sourceCodeLinkBox">
+                            <a href="https://github.com/Jackson-Wheeler/chess_game" target="_blank">
+                                <img src="/images/github_logo.png" alt="GitHub Logo" height="20" width="20" />
+                                <span class="contactLink">Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+        
                 </section>
+                
             </section>
         </section>
 
@@ -250,10 +304,10 @@
     </aside>
 
     <footer>
-        <hr />
+        <div id="animationContainer">
+            <p>&hearts; Choose Me! &hearts;</p>
+        </div>
         <p>&copy; Jackson Wheeler</p>
-        <a href="/experiments.html">Experiments Page</a>
-
     </footer>
 
 </body>
