@@ -125,9 +125,8 @@ a {
 #navbarSection {
     /* As a grid item (child) */
     grid-column: var(--grid-full-span);
-
     border-bottom: var(--bottom-border);
-    /* background-color: var(--background-color); */
+    background-color: var(--background-color);
 
     /* Position */
     z-index: 10;
@@ -201,7 +200,7 @@ a {
     align-self: center;
 
     margin: 3vh 2vh;
-    margin-top: 4rem;
+    margin-top: 5rem;
     text-align: center;
 }
 
@@ -274,6 +273,10 @@ main > section {
 
 
 /* Education */
+#education {
+    /* Takes care of Nav bar when navigating to #education */
+    scroll-margin-top: 3rem;
+}
 
 #ucsd {
     margin-bottom: 2vh;
@@ -355,6 +358,10 @@ h3 {
 
 
 /* Projects */
+
+#projects {
+    scroll-margin-top: 3rem;
+}
 
 #projects p, #projects li {
     font-size: 0.9em;
