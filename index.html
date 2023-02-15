@@ -65,15 +65,19 @@
         <section id="education">
             <h2>Education</h2>
             <div id="ucsd" class="educationItem contentBorder">
-                <img src="images/ucsd_logo.png" alt="UCSD logo" height="100" width="100"/>
-                <p><b>University Of California, San Diego</b></p>
-                <p>Bachelors of Science in Computer Science</p>
-                <p><em>GPA: 3.8</em></p>
+                <img id="ucsdLogo" src="images/ucsd_logo.png" alt="UCSD logo" height="100" width="100"/>
+                <div class="educationDescription" >
+                    <p>University Of California, San Diego</p>
+                    <p>Bachelors of Science in Computer Science</p>
+                    <p><em>GPA: 3.81</em></p>    
+                </div>
             </div>
-            <div id="yonsei" class="educationIte contentBorder">
-                <img src="images/yonsei_logo.jpeg" alt="Yonsei University logo" height="70" width="70" />
-                <p><b>Yonsei University, Seoul, South Korea</b></p>
-                <p>Exchange Program: Fall 2022</p>
+            <div id="yonsei" class="educationItem contentBorder">
+                <img id="yonseiLogo" src="images/yonsei_logo.jpeg" alt="Yonsei University logo" height="70" width="70" />
+                <div class="educationDescription">
+                    <p>Yonsei University, Seoul, South Korea</p>
+                    <p>Exchange Program: Fall 2022</p>    
+                </div>
             </div>
 
         </section>
@@ -81,18 +85,22 @@
         <section id="relevantSkills">
             <h2>Relevant Skills</h2>
             <div id="skillsBox" class="contentBorder">
-                <h3>Skill Category 1</h3>
-                <div class="skillList">
-                    Skill 1, Skill 2, Skill 3, Skill 4
-                </div>
-                <h3>Skill Category 2</h3>
-                <div class="skillList">
-                    Skill 1, Skill 2, Skill 3, Skill 4
-                </div>
-                <h3>Skill Category 3</h3>
-                <div class="skillList">
-                    Skill 1, Skill 2, Skill 3, Skill 4
-                </div>
+                <section class="skillSet">
+                    <h3>General Software Engineering</h3>
+                    <div class="skillList">
+                        <p><span class="skillType">Language/Tool:</span>
+                         Java, Python, C++; Andriod Studio</p>
+                        <p><span class="skillType">App. Uni. Courses:</span>
+                        Software Engineering, Algorithms, Data Structures, Object Oriented Design</p>
+                    </div>
+                </section>
+                <section class="skillSet">
+                    <h3>Lower Level Software Engineering</h3>
+                    <div class="skillList">
+                        <p>C, Bash, Linux, Makefiles</p>
+                        <p>Computer Networks, Compiler Design</p>
+                    </div>
+                </section>                
             </div>
         </section>
 
@@ -132,7 +140,8 @@
         </section>
 
     </main>
-    <aside id="rightSidebar">
+
+    <!-- <aside id="rightSidebar">
         <contact-card>
             <header id="contactCardHeader">
                 <h2>Contact Links</h2>
@@ -156,7 +165,29 @@
                 </a>
             </section>
         </contact-card>
+    </aside> -->
+
+    <aside id="rightSection">
+        <div id="sideBar">
+            <a href="mailto:jackson.n.wheeler@gmail.com" title="Email">
+                <span>Email</span>
+                <img src="/images/email_logo_5.png" alt="Email Logo" height="20" width="20" />
+            </a>
+            <a href="https://www.linkedin.com/in/jackson-wheeler-ucsd/" target="_blank" title="LinkedIn">
+                <span>LinkedIn</span>
+                <img src="/images/linkedIn_logo.png" alt="LinkedIn Logo" height="20" width="20" />
+            </a>
+            <a href="https://github.com/Jackson-Wheeler" target="_blank" title="GitHub">
+                <span>GitHub</span>
+                <img src="/images/github_logo.png" alt="GitHub Logo" height="20" width="20" />
+            </a>
+            <a href="/resources/Jackson_Wheeler_Resume.pdf" target="_blank" title="Resume">
+                <span>Resume</span>
+                <img src="/images/resume_logo_personal_2.jpg" alt="Resume logo" height="20" width="20" />
+            </a>
+        </div>
     </aside>
+
     <footer>
         <hr />
         <p>&copy; Jackson Wheeler</p>
