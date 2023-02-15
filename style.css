@@ -1,7 +1,6 @@
 @font-face {
     font-family: "Montserrat";
     /* font-style: normal; */
-    font-weight: 400;
     font-display: auto;
     src: url(/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
@@ -49,12 +48,23 @@
 
     /* color */
     --background-color: #FAF9F6;
-    /* --background-color-darker: rgba(0,0,0,.125); */
     --background-color-darker: rgba(0,0,0,.1);
-    --border-color: rgba(0,0,0,.125);
+    --background-color-darker-2: rgba(0,0,0,.1);
+    --border-color: rgba(0,0,0,.15);
+    --border-color-lv2: rgba(0,0,0,.4);
+    --border-color-lv3: rgba(0,0,0,.5);
+
+    --gray-lv1: rgba(218,218,218,255);
+    --gray-lv2: rgba(185,185,185,255);
+    --gray-lv3: rgba(128,132,135,255);
+    --gray-lv4: rgba(100,100,100,255);
+
+
 
     /* borders */
     --box-border: 1px solid var(--border-color);
+    --box-border-lv2: 1px solid var(--border-color-lv2);
+    --box-border-lv3: 1px solid var(--border-color-lv3);
     --bottom-border: 1px solid var(--border-color);
     --test-border: 1px solid red;
 
@@ -293,20 +303,51 @@ main > section {
 }
 
 h3 {
-
+    font-weight: 400;
+    /* border-bottom: var(--bottom-border); */
+    border-bottom: var(--box-border-lv3);
 }
 
-.skillSet {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+.skillSection {
+    margin-top: 0;
+    margin-bottom: 2vh;
 }
 
-.skillList {
+.skillTable {
+    margin-top: 1vh;
     font-size: 0.9em;
+
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    font-family: var(--formal-font);
+
+}
+
+.skillTable th, .skillTable td {
+    border: var(--box-border-lv2);
+    padding: 0.5em;
+}
+
+.skillTable strong {
+    font-family: var(--formal-bold-font);
+}
+
+.skillTable tr:first-child {
+    background-color: var(--gray-lv1);
+}
+
+.skillTable tr:first-child + tr {
+    /* background-color: var(--gray-lv1); */
 }
 
 .skillType {
-    font-weight: bold;
+    /* border: var(--box-border); */
+    font-family: var(--formal-bold-font);
+    /* font-weight: 500; */
+}
+
+#excellencySkills td {
+    font-style: italic;
 }
 
 
