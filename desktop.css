@@ -186,7 +186,7 @@ video {
     margin-right: 1.25vw;
 }
 
-#navbar input, #hamburgerMenu, #hamburgerMenu > svg {
+#hamburgerMenu, #menuBarView {
     display: none;
 }
 
