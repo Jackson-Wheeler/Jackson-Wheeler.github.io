@@ -92,7 +92,6 @@
 
 * {
     margin: 0;
-
     /* border: var(--test-border) !important; */
 }
 
@@ -136,20 +135,12 @@ video {
     top: 0;
     left: 0;
     right: 0;
+
+    padding: 0;
 }
 
-#navbarSection a {
-    transition: all 0.2s;
-}
-
-#navbarSection a:hover {
-    transform: scale(1.1);
-    text-decoration: underline;
-}
 
 #navbar {
-    padding: 0.25em 0.8em;
-
     font-family: var(--font-3);
     font-size: 1.5em;
     font-weight: 100;
@@ -157,12 +148,23 @@ video {
     /* text-transform: lowercase; */
 
     /* As a flexbox container */
-    display: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+    padding: 0;
+}
+
+#navbar > * {
+    padding: 0.1em 0.6em;
 }
 
 #leftNav {
     font-size: 1.20em;
     margin: 0.2em 0;
+    padding: 0.2em 0.6em;
     width: max-content;
 }
 
@@ -170,37 +172,30 @@ video {
     display: none;
 }
 
-.hamburgerSize {
-    width: 1.4em;
-    height: 1.4em;
-}
-
-.hamburgerPos {
-    position: absolute;
-    top: 0.5em;
-    right: 1.1em;
-}
-
-#navbar > input {
-    opacity: 0;
-    z-index: 10;
+#hamburgerMenu {
+    display: grid;
+    padding: 0 1em;
+    justify-content: center;
+    align-content: center;
 }
 
 #hamburgerMenu > svg {
     z-index: 8;
+    width: 1.4em;
+    height: 1.4em;
+
 }
 
-#dropdownBox {
+* {
+    /* border: var(--test-border) !important; */
+}
+
+/* #dropdownBox {
     opacity: 1;
     z-index: 5;
 
     position: absolute
-}
-
-#navbar > input:checked ~ #hamburgerMenu {
-    background-color: yellow;
-
-}
+} */
 
 
 /* Header */
