@@ -156,10 +156,6 @@ video {
     padding: 0;
 }
 
-#navbar > * {
-    padding: 0.1em 0.6em;
-}
-
 #leftNav {
     font-size: 1.20em;
     margin: 0.2em 0;
@@ -172,8 +168,8 @@ video {
 }
 
 .menuButton {
+    padding: 0.5em 1em;
     display: grid;
-    padding: 0 1em;
     justify-content: center;
     align-content: center;
 }
@@ -198,25 +194,17 @@ video {
     right: 0;
     z-index: 10;
     width: 70%;
-    height: 70%;
+    height: 100%;
 
     display: flex;
     flex-direction: column;
 }
 
-#menuClose {
-    padding: 0.5em;
-    
+#menuCloseContainer {    
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 } 
-
-#menuClose > svg {
-    width: 1.4em;
-    height: 1.4em;
-}
-
 
 
 * {
