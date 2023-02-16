@@ -621,12 +621,12 @@ footer {
     }
 
     #hamburgerMenu {
-        padding: 1em;
+        padding: 1.5em;
     }
 
     #hamburgerMenu svg {
-        width: 30px;
-        height: 30px;
+        width: 4em;
+        height: 4em;
         pointer-events: none;
     }
 }
