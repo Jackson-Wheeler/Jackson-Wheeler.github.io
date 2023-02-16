@@ -618,10 +618,14 @@ footer {
     /* NavBar */
 
     #navbar {
-        font-size: 3.3em;
-        padding: 0.25em 0.75em;
+        font-size: 2.5em;
+        padding: 0.25em 1.5em;
 
         align-items: center;
+    }
+
+    #leftNav {
+        margin: 0.2em;
     }
 
     #rightNav {
@@ -630,13 +634,13 @@ footer {
     }
 
     #hamburgerMenu {
-        height: 1em;
-        margin: 0.5em
+        height: 1.2em;
+        /* margin: 0.5em; */
     }
 
     #hamburgerMenu svg {
-        width: 1em;
-        height: 1em;
+        width: 1.2em;
+        height: 1.2em;
         pointer-events: none;
     }
 
