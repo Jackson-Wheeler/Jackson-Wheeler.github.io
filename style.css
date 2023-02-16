@@ -607,3 +607,26 @@ footer {
     border-top: var(--box-border);
     padding: 1vh 1vw;
 }
+
+
+/* Media Query */
+@media (max-width: 768px) {
+    * {
+        /* border: 1px solid red; */
+    }
+
+    #rightNav {
+        display: none;
+        z-index: 1;
+    }
+
+    #hamburgerMenu {
+        padding: 1em;
+    }
+
+    #hamburgerMenu svg {
+        width: 30px;
+        height: 30px;
+        pointer-events: none;
+    }
+}
