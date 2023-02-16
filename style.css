@@ -612,7 +612,14 @@ footer {
 /* Media Query */
 @media (max-width: 768px) {
     * {
-        /* border: 1px solid red; */
+        border: 1px solid red;
+    }
+
+    /* NavBar */
+
+    #navbar {
+        font-size: 4em;
+        padding: 0.5em;
     }
 
     #rightNav {
@@ -621,12 +628,16 @@ footer {
     }
 
     #hamburgerMenu {
-        padding: 1.5em;
     }
 
     #hamburgerMenu svg {
-        width: 4em;
-        height: 4em;
+        width: 1.5em;
+        height: 1.5em;
         pointer-events: none;
+    }
+
+    /* Header */
+    header {
+        padding-top: 15em;
     }
 }
