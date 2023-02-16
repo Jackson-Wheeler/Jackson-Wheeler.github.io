@@ -151,7 +151,7 @@ video {
     padding: 0.25em 0.8em;
 
     font-family: var(--font-3);
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: 100;
     /* font-variant-caps: all-small-caps; */
     /* text-transform: lowercase; */
@@ -171,14 +171,14 @@ video {
 }
 
 .hamburgerSize {
-    width: 2em;
-    height: 2em;
+    width: 1.4em;
+    height: 1.4em;
 }
 
 .hamburgerPos {
     position: absolute;
-    top: 0.25em;
-    right: 0.8em;
+    top: 0.5em;
+    right: 1.1em;
 }
 
 #navbar > input {
