@@ -612,7 +612,7 @@ footer {
 /* Media Query */
 @media (max-width: 768px) {
     * {
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
 
     /* NavBar */
