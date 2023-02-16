@@ -10,7 +10,9 @@
     <title>Jackson Wheeler: Home page</title>
     <!-- Below image: Personally designed-->
     <link href="/images/initials.jpg" rel="icon" />
-    <link rel="stylesheet" href="style.css" media="screen" />
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)" />
+    <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 769px; max-width: 992px)" />
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 993px)" />
 
 </head>
 <body>
@@ -25,18 +27,17 @@
                 <a href="#projects">Projects</a>
                 <!-- <a href="contact.html">Contact Me!</a>     -->
             </div>
-            <div id="hamburgerMenu">
-                <input type="checkbox" class="hamburgerIcon"/>
-                <svg viewBox="0 0 40 34" class="hamburgerIcon" role="img">
+            <!-- Hamburger Menu -->
+            <input type="checkbox" class="hamburgerSize hamburgerPos"/>
+            <div id="hamburgerMenu" class="hamburgerSize hamburgerPos">
+                <svg viewBox="0 0 40 34" class="hamburgerSize" role="img">
                     <title>Hamburger Menu</title>
                     <rect x="0" y="28" width="100%" height="6" rx="3"></rect>
                     <rect x="0" y="14" width="100%" height="6" rx="3"></rect>
                     <rect x="0" y="0" width="100%" height="6" rx="3"></rect>
                 </svg>
-                <div id="dropdownBox">
-
-                </div>
             </div>
+
         </nav>
     </section>
 
