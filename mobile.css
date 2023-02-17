@@ -239,7 +239,7 @@ video {
 
     padding: 0.5em 0.5em;
 
-    font-size: 2em;
+    font-size: 8vw;
 
     margin-bottom: 2em;
 }
@@ -252,23 +252,24 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-size: 5vw;
 }
 
 #menuContactLinks {
     border: var(--box-border);
-    width: 60%;
-    padding: 0.1em;
+    width: 80%;
 
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+    padding: 4vw 0;
 
-    font-size: 1.2em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
 }
 
-#menuContactLinks > a {
-    padding: 0.5em;
+#menuContactLinks a { 
+    justify-self: center;
+    align-self: center;
     
     transition: all 0.2s;
 
@@ -278,7 +279,7 @@ video {
     align-items: center;  
 }
 
-#menuContactLinks > a > img {
+#menuContactLinks img {
     height: 3em;
     width: 3em;
 }
