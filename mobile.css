@@ -223,8 +223,6 @@ video {
 
     display: flex;
     flex-direction: column;
-
-    font-size: 1.5em;
 } 
 
 #menuCloseContainer {    
@@ -240,10 +238,14 @@ video {
     flex-direction: column;
 
     padding: 0.5em 0.5em;
+
+    font-size: 2em;
+
+    margin-bottom: 2em;
 }
 
 #menuNav > a {
-    padding: 0.6em;
+    padding: 0.7em;
 }
 
 #menuContactLinksContainer {
@@ -253,18 +255,20 @@ video {
 }
 
 #menuContactLinks {
-    padding: 0.5em;
+    border: var(--box-border);
+    width: 60%;
+    padding: 0.1em;
 
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
 
-    font-size: 0.8em;
+    font-size: 1.2em;
 }
 
 #menuContactLinks > a {
-    padding: 1em;
+    padding: 0.5em;
     
     transition: all 0.2s;
 
@@ -275,12 +279,13 @@ video {
 }
 
 #menuContactLinks > a > img {
-    height: 4em;
-    width: 4em;
+    height: 3em;
+    width: 3em;
 }
 
 #menuContactLinks > a:hover {
     transform: scale(1.1);
+    text-decoration: none;
 }
 
 
