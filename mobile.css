@@ -74,7 +74,7 @@
     --grid-full-span: 1 / 6;
     --grid-center: 3 / 4;
     --grid-rightSidebar: 4 / 5; */
-    --grid-columns: 1;
+    --grid-columns: auto;
     --grid-rows: auto auto uto auto auto;
     --grid-full-span: 1;
 
