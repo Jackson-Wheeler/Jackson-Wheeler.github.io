@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Simple Crud</title>
+    <link rel="stylesheet" href="crud.css" media="screen"/>
+    <script type="module" src="js/blog.js"></script>
+</head>
+<body>
+<h1>Blog Posts</h1>
+    <section id="blogPostsContainer">
+        
+    </section>
+    <template>
+        <article style="border: 1px solid black" class="entryContainer">
+            <div class="changeMenu">
+                <p>Edit</p>
+                <p>Delete</p>
+            </div>
+            <article class="blogPostContainer">
+                <header>
+                    <h2>Blog Title</h2>
+                    <span>Date</span>
+                </header>
+                <div class="blogSummaryContainer">
+                    <p>Summary Here</p>
+                </div>
+            </article>
+        </article>
+    </template>
+</body>
