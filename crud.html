@@ -4,29 +4,44 @@
 <head>
     <meta charset="utf-8" />
     <title>Simple Crud</title>
-    <link rel="stylesheet" href="crud.css" media="screen"/>
-    <script type="module" src="js/blog.js"></script>
+    <script defer type="module" src="js/blog.js"></script>
 </head>
 <body>
 <h1>Blog Posts</h1>
-    <section id="blogPostsContainer">
-        
-    </section>
-    <template>
-        <article style="border: 1px solid black" class="entryContainer">
-            <div class="changeMenu">
-                <p>Edit</p>
-                <p>Delete</p>
+<button id="add" type="button">Add Blog</button>
+<section id="blogPostsContainer">
+    
+</section>
+<dialog>
+    <form method="dialog">
+        <label for="title">Title: </label>
+        <input required type="text" id="title" name="title">
+        <label for="date">Date: </label>
+        <input required type="text" id="date" name="date">
+        <br>
+        <label for="summary">Summary: </label>
+        <textarea required id="summary" name="summary" cols="30" rows="2"></textarea>
+        <div>
+            <button value="cancel">Cancel</button>
+            <button id="saveButton" value="save">Save</button>
+        </div>
+    </form>
+</dialog>
+<template>
+    <article style="border: 1px solid black; font-size: 0.8em" class="entryContainer">
+        <div class="changeMenu">
+            <button class="editButton" type="button">Edit</button>
+            <button class="deleteButton" type="button">Delete</button>
+        </div>
+        <article class="blogPostContainer">
+            <header>
+                <h2>Blog Title</h2>
+                <span>Date</span>
+            </header>
+            <div class="blogSummaryContainer">
+                <p>Summary Here</p>
             </div>
-            <article class="blogPostContainer">
-                <header>
-                    <h2>Blog Title</h2>
-                    <span>Date</span>
-                </header>
-                <div class="blogSummaryContainer">
-                    <p>Summary Here</p>
-                </div>
-            </article>
         </article>
-    </template>
+    </article>
+</template>
 </body>
