@@ -489,43 +489,6 @@ figcaption {
     text-decoration: underline;
 }
 
-/* Animation */
-#animationSection {
-    height: 10vh;
-
-    /* display: grid; */
-}
-
-#animationContainer {
-    overflow: hidden;
-    padding: 0.5em;
-    /* border: var(--box-border); */
-}
-
-#animationContainer p {
-    animation-duration: 3s;
-    animation-name: slide;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-
-    width: max-content;
-    font-size: 3rem;
-    font-family: cursive;
-    font-weight: bold;
-    color: red;
-}
-
-@keyframes slide {
-    from {
-        margin-left: 0;
-    }
-  
-    to {
-        margin-left: 75%;
-      /* margin-right: 0; */
-    }
-  }
-
 
 
 
