@@ -1,5 +1,5 @@
-Github Repo: https://github.com/Jackson-Wheeler/personal-portfolio-hw4
+Part 1: https://legendary-crostata-6ef2fb.netlify.app/methodtest.html
 
-Native Dialogs: https://vermillion-crepe-413ada.netlify.app/nativedialogs.html
-CRUD: https://vermillion-crepe-413ada.netlify.app/crud.html
-Styled CRUD: https://vermillion-crepe-413ada.netlify.app/styledcrud.html
+Part 2: https://legendary-crostata-6ef2fb.netlify.app/webcomponent.html
+
+Part 3: N/A
