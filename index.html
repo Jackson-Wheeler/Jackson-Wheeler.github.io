@@ -12,19 +12,24 @@
     <link href="/images/favicon.jpg" rel="icon" />
     <link rel="stylesheet" href="css/style.css" media="screen" />
     <script defer type="module" src="/js/main.js"></script>
+    <!-- <style>
+        * {
+            border: var(--test-border) !important;
+        }
+    </style> -->
 
 </head>
 <body>
     <!-- Navbar -->
     <nav id="navbar">
         <div id="leftNav">
-            <a href="#top">Jackson Wheeler</a>
+            <a href="/">Jackson Wheeler</a>
         </div>
         <div id="rightNav">
             <a href="#top">Home</a>
             <a href="#education">Education/Skills</a>
             <a href="#projects">Projects</a>
-            <a href="/contact.html">Contact Me</a>    
+            <!-- <a href="/contact.html">Contact Me</a>     -->
         </div>
         <!-- Hamburger Menu -->
         <!-- TODO: put hamburger icon here -->
@@ -89,20 +94,20 @@
     <header id="mainHeader">
         <article id="profileHeading">
             <picture id="profilePic">
-                <source srcset="/images/professional_photo_smile_small.webp"
-                type="image/webp" media="(max-width: 769px)" />
-                <source 
-                srcset="/images/professional_photo_smile.webp"
-                type="image/webp" media="(min-width: 769px)" />
-                <source srcset="/images/professional_photo_smile_small.jpg"
-                media="(max-width: 769px)" />
-                <img src="/images/professional_photo_smile.jpg"
-                alt="profile photo" height="205" width="164"/>
+                <source srcset="/images/profile_photo_small.webp"
+                type="image/webp" 
+                media="(max-width: 992px)" />
+                <source srcset="/images/profile_photo_small.jpg" 
+                media="(max-width: 992px)" />
+                <source srcset="/images/profile_photo.webp"
+                type="image/webp" />
+                <img src="/images/profile_photo.jpg"
+                alt="profile photo" width="164"/>
     
             </picture>
             <h1>Jackson Wheeler</h1>
-            <p>Software Engineer</p>
-            <p>B.S. in Computer Science @ UCSD</p>
+            <p>Software & Networking Engineer</p>
+            <p>B.S. Computer Science Student @ UC San Diego</p>
         </article>
     </header>
     

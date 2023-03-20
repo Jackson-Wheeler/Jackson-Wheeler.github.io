@@ -1,3 +1,7 @@
+* {
+    /* border: var(--test-border) !important; */
+}
+
 @font-face {
     font-family: "Montserrat";
     /* font-style: normal; */
@@ -40,7 +44,7 @@
     --test-border: 1px solid red;
 
     /* Grid Layout */
-    --main-width: min(70ch, 80%);
+    --main-width: min(65ch, 80%);
     --grid-columns: 1fr var(--main-width) 1fr;
     --grid-full-span: 1 / 4;
     --grid-center: 2 / 3;
@@ -53,11 +57,12 @@
     --ff-3: "HelveticaNeueThin", cursive;
 
     /* font sizing */
-    --fs-xl: 2rem;
-    --fs-700: 1.75rem;
+    --fs-xl: 3.5rem; /* h1 */
+    --fs-800: 2rem; /* h2 */
+    --fs-700: 1.75rem; 
     --fs-600: 1.5rem;
-    --fs-500: 1.25rem;
-    --fs-400: 1rem;
+    --fs-500: 1.25rem; /* Nav */
+    --fs-400: 1rem; /* Main */
     --fs-300: 0.75rem;
     --fs-200: 0.5rem;
 }
@@ -189,7 +194,26 @@ video {
     align-self: center;
 
     margin-top: 5rem;
+    text-align: center;
 }
+
+#profilePic > * {
+    width: 16rem;
+    border-radius: 8px;
+}
+
+h1 {
+    font-family: var(--ff-formal);
+    font-size: var(--fs-xl);
+    font-weight: lighter;
+    margin: 0;
+}  
+
+#profileHeading p {
+    font-size: var(--fs-400);
+    /* font-weight: lighter; */
+}
+
 
 /***********
  --MAIN-- 
@@ -202,9 +226,28 @@ main {
     flex-direction: column;
 }
 
+main section:first-child {
+    margin-top: 1em;
+}
+
+main > section {
+    margin: 0.75em 0;
+}
+
 .contentBorder {
     border: var(--box-border);
-    /* padding: .5em; */
+    padding: .75em;
+}
+
+h2 {
+    font-family: var(--ff-formal);
+    font-size: var(--fs-800);
+    margin: 0.25em 0;
+}
+
+main p {
+    font-size: var(--fs-400);
+    margin: 0;
 }
 
 
@@ -215,6 +258,9 @@ main {
 /***********
  --EDUCATION-- 
  ************/
+ #education {
+    scroll-margin-top: 3rem;
+ }
 
 /************
  --REL. SKILLS-- 
@@ -223,6 +269,9 @@ main {
 /************
  --PROJECTS-- 
  ************/
+ #projects {
+    scroll-margin-top: 3rem;
+ }
 
 
  /************
