@@ -44,7 +44,7 @@
     --test-border: 1px solid red;
 
     /* Grid Layout */
-    --main-width: min(65ch, 80%);
+    --main-width: min(60ch, 80%);
     --grid-columns: 1fr var(--main-width) 1fr;
     --grid-full-span: 1 / 4;
     --grid-center: 2 / 3;
@@ -159,7 +159,7 @@ video {
 
     /* font */
     font-family: var(--ff-formal);
-    font-size: var(--fs-500);
+    font-size: var(--fs-600);
 
 }
 
@@ -231,12 +231,12 @@ main section:first-child {
 }
 
 main > section {
-    margin: 0.75em 0;
+    margin: 0.75em 0.75em;
 }
 
 .contentBorder {
     border: var(--box-border);
-    padding: .75em;
+    /* padding: .75em; */
 }
 
 h2 {
@@ -247,7 +247,7 @@ h2 {
 }
 
 main p {
-    font-size: var(--fs-400);
+    /* font-size: var(--fs-500); */
     margin: 0;
 }
 
@@ -255,13 +255,61 @@ main p {
 /***********
  --ABOUT ME-- 
  ************/
+#aboutMe p {
+    font-size: var(--fs-500);
+}
+
+#aboutMe .contentBorder {
+    padding: .75em;
+}
 
 /***********
  --EDUCATION-- 
  ************/
- #education {
+#education {
     scroll-margin-top: 3rem;
- }
+    font-size: var(--fs-500);
+}
+
+.edCard {
+    padding: 0;
+    margin-bottom: 0.75em;
+}
+
+.edCard:last-child {
+    margin-bottom: 0;
+}
+
+.edCard img {
+    width: 5em;
+}
+
+.edDate {
+    border-bottom: var(--box-border);
+    padding: 0.25em;
+}
+
+.edDetails {
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    /* other */
+    padding: 0.5em;
+}
+
+#yonseiLogo {
+    padding: 0.2rem;
+}
+
+.edDescription {
+    margin-left: 1.5rem;
+}
+
+.edDescription > p:first-child {
+    font-weight: 500;
+}
 
 /************
  --REL. SKILLS-- 
