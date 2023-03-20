@@ -82,6 +82,7 @@
 
     /* Responsive font size */
     font-size: calc(.3rem + 0.6vw);
+    /* font-size: clamp(0.5rem, .3rem + .6vw, 4rem); */
 }
 
 /* Reset */
@@ -205,8 +206,6 @@ video {
 }
 
 #profileHeading {
-    /* border: 1px solid red; */
-
     justify-self: center;
     align-self: center;
 
@@ -276,7 +275,6 @@ main > section {
 
 
 /* About Me */
-
 #aboutMe > p {
     /* border: var(--box-border); */
     /* padding: .5em; */
