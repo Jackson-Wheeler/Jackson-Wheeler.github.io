@@ -435,7 +435,7 @@ main p {
 }
 
 #sideBar > a {
-    /* transition: all 0.2s; */
+    transition: all 0.05s;
 
     display: flex;
     flex-direction: column;
@@ -446,6 +446,12 @@ main p {
 #sideBar img {
     width: 2.25rem;
     margin: .5em;
+}
+
+#sideBar a:hover img {
+    transform: scale(1.02);
+    /* text-decoration: underline; */
+    /* background-color: var(--background-color-darker); */
 }
 
 
