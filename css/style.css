@@ -59,9 +59,9 @@
     --fs-xl: 3.5rem; /* h1 */
     --fs-800: 2rem; /* h2 */
     --fs-700: 1.75rem; 
-    --fs-600: 1.5rem;  /* Nav */ 
-    --fs-500: 1.25rem;/* About Me, Education */
-    --fs-400: 1rem; /* profile subheading */
+    --fs-600: 1.5rem;  
+    --fs-500: 1.25rem; /* Nav */
+    --fs-400: 1rem; /* profile subheading, About Me, Education */
     --fs-300: 0.8rem;
     --fs-200: 0.5rem;
 
@@ -163,7 +163,8 @@ video {
 
     /* font */
     font-family: var(--ff-formal);
-    font-size: var(--fs-600);
+    font-size: var(--fs-500);
+    font-weight: 300;
 
 }
 
@@ -260,7 +261,7 @@ main p {
  --ABOUT ME-- 
  ************/
 #aboutMe p {
-    font-size: var(--fs-500);
+    font-size: var(--fs-400);
 }
 
 #aboutMe .contentBorder {
@@ -272,7 +273,7 @@ main p {
  ************/
 #education {
     scroll-margin-top: 3rem;
-    font-size: var(--fs-500);
+    font-size: var(--fs-400);
 }
 
 .edCard {
@@ -329,7 +330,7 @@ main p {
 
 #relevantSkills h3 {
     border-bottom: var(--box-border-lv3);
-    font-size: var(--fs-500);
+    font-size: var(--fs-400);
     font-weight: 400;
     margin: 0.25em 0;
 }
