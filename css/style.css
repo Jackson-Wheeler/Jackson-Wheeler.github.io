@@ -67,6 +67,9 @@
 
     /* Side bar */
     --sb-align: end;
+
+    /* Other */
+    --scroll-margin: 3rem;
 }
 
 /* --Media Queries-- */
@@ -281,7 +284,7 @@ main p {
  --EDUCATION-- 
  ************/
 #education {
-    scroll-margin-top: 3rem;
+    scroll-margin-top: var(--scroll-margin);
     font-size: var(--fs-400);
 }
 
@@ -395,9 +398,127 @@ main p {
  --PROJECTS-- 
 ************/
 #projects {
-    scroll-margin-top: 3rem;
+    scroll-margin-top: var(--scroll-margin);
+    font-size: var(--fs-400);
 }
 
+.projectHeader {
+    border-bottom: var(--box-border-lv3);
+    margin-bottom: 1vh;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.projectHeader p {
+    font-family: var(--formal-font);
+}
+
+.projectHeader h3 {
+    margin: 0;
+    font-weight: 400;
+    font-size: var(--fs-600);
+
+}
+
+.overviewSection {
+    margin-bottom: 2vh;
+}
+
+#projects h4 {
+    font-weight: 400;
+    border-bottom: var(--box-border-lv2);
+    width: max-content;
+    margin-bottom: 0;
+    margin: 0;
+}
+
+.overviewText {
+    margin: 1vh 0.5vw;
+    margin-top: 0;
+    /* border: var(--box-border); */
+}
+
+.descriptionSection {
+    margin: 2vh auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+#chessProjFigures {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+}
+
+#chessProjFigures figure {
+    border: 4px solid var(--gray-lv1);
+    background-color: var(--gray-lv1);
+    /* box-shadow: 2px 2px 1px var(--border-color-lv2); */
+    font-family: var(--formal-font);
+    font-size: 0.8em;
+    margin: 0.5rem;
+}
+
+#chessProjFigures img {
+    width: 20rem;
+    height: min(23rem);
+}
+
+.descriptionText {
+    margin: 1vh 0.5vw;
+    /* border: var(--box-border); */
+}
+
+.takeawaysSection {
+    margin: 2vh auto;
+}
+
+.projectFooter {
+    margin: 1.5vh auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sourceCodeLinkBox {
+    border: var(--box-border-lv2);
+    padding: 0.25em;
+    width: max-content;
+
+    overflow: hidden;
+}
+
+.sourceCodeLinkBox a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sourceCodeLinkBox img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.sourceCodeLinkBox  span {
+    padding-left: 0.25em;
+}
+
+.sourceCodeLinkBox:hover {
+    background-color: var(--background-color-darker);
+}
+
+.sourceCodeLinkBox:hover span {
+    text-decoration: underline;
+}
 
 
 
