@@ -64,6 +64,9 @@
     --fs-400: 1rem; /* profile subheading */
     --fs-300: 0.8rem;
     --fs-200: 0.5rem;
+
+    /* Side bar */
+    --sb-align: end;
 }
 
 /* --Media Queries-- */
@@ -75,7 +78,6 @@
         --grid-full-span: 1 / 2;
         --grid-center: 1 / 2;
         --grid-rightSidebar: 1 / 2;
-
     }
 }
 /* Main column w/ small right side bar */
@@ -83,11 +85,14 @@
     :root {
         /* Grid Layout */
         /* --main-width: 90%; */
-        --grid-columns: 6fr 1fr;
+        /* --grid-columns: 6fr 1fr; */
+        --grid-columns: auto 1fr;
         --grid-full-span: 1 / 3;
         --grid-center: 1 / 2;
         --grid-rightSidebar: 2 / 3;
 
+        /* Side bar */
+        --sb-align: center;
     }
 }
 
@@ -387,6 +392,16 @@ main p {
 /************
  --SIDEBAR-- 
 ************/
+/* Tablet */
+/* @media (min-width: var(--tablet-min)) and (max-width: var(--tablet-max)) {
+
+} */
+
+/* Desktop */
+/* @media (min-width: var(--desktop-min)) {
+
+} */
+
 #rightSection {
     grid-column: var(--grid-rightSidebar);
 
@@ -397,15 +412,16 @@ main p {
 }
 
 #sideBar {
-    align-self: end;
+    align-self: var(--sb-align);
+    background-color: var(--sb-color);
 
-    --height: min(30rem);
+    --height: min(25rem);
     height: var(--height);
     position: sticky;
     /* For centering in middle of screen */
     top: calc(50vh - calc(var(--height)/2));
 
-    margin: 0 .5rem;
+    margin: 0 0rem;
     margin-top: 10vh;
 
     padding: 0 0.5em;
@@ -416,8 +432,6 @@ main p {
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
-
-    border: var(--box-border);
 }
 
 #sideBar > a {
@@ -430,7 +444,7 @@ main p {
 }
 
 #sideBar img {
-    width: 3rem;
+    width: 2.25rem;
     margin: .5em;
 }
 
