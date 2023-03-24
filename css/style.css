@@ -68,6 +68,14 @@
     /* Side bar */
     --sb-align: end;
 
+    /* Nav Bar */
+    --nm-flex-dir: row;
+    --nav-branding-and-icon-width: auto;
+    --nav-menu-display: flex;
+    --nav-menu-padding: 0;
+    --nav-item-margin: 0 1.25vw;
+    --menu-icon-display: none;
+
     /* Other */
     --scroll-margin: 3rem;
 }
@@ -81,8 +89,17 @@
         --grid-full-span: 1 / 2;
         --grid-center: 1 / 2;
         --grid-rightSidebar: 1 / 2;
+
+        /* Nav Bar */
+        --navbar-flex-dir: column;
+        --nav-branding-and-icon-width: 100%;
+        --nav-menu-display: none;
+        --nav-menu-padding: 0.25em;
+        --nav-item-margin: 0.75em;
+        --menu-icon-display: block;
     }
 }
+
 /* Main column w/ small right side bar */
 @media (min-width: 601px) and (max-width: 992px) {
     :root {
@@ -141,7 +158,7 @@ video {
 /***********
  --NAVBAR-- 
  ************/
-#navbar {
+.navbar {
     /* As a grid item (child) */
     grid-column: var(--grid-full-span);
     border-bottom: var(--box-border);
@@ -156,7 +173,7 @@ video {
 
     /* As a flexbox container */
     display: flex;
-    flex-direction: row;
+    flex-direction: var(--navbar-flex-dir);
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
@@ -168,30 +185,55 @@ video {
     font-family: var(--ff-formal);
     font-size: var(--fs-500);
     font-weight: 300;
-
 }
 
-#rightNav {
-    /* As a flexbox container */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-
-#rightNav > a {
-    margin-left: 1.25vw;
-    margin-right: 1.25vw;
-}
-
-#navbar a {
+.navbar a {
     transition: all 0.1s;
 }
 
-#navbar a:hover {
+.navbar a:hover {
     /* transform: scale(1.01); */
     text-decoration: underline;
 }
+
+.nav-branding-and-icon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: var(--nav-branding-and-icon-width);
+}
+
+.nav-menu {
+    /* As a flexbox container */
+    display: var(--nav-menu-display);
+    flex-direction: var(--navbar-flex-dir);
+    flex-wrap: nowrap;
+    align-items: center;
+
+    list-style: none;
+    padding-left: 0;
+    padding: var(--nav-menu-padding);
+    margin: 0.25em;
+}
+
+.nav-menu li {
+    margin: var(--nav-item-margin);
+}
+
+.menu-icon {
+    display: var(--menu-icon-display);
+}
+.menu-icon .menu-open {
+    font-size: 2.25rem;
+}
+.menu-icon .menu-close {
+    font-size: 2.25rem;
+    display: none;
+}
+
 
 /***********
  --HEADER-- 
@@ -358,6 +400,7 @@ main p {
 }
 .skillTable strong {
     font-family: var(--ff-formal-bold);
+    font-weight: 900;
 }
 .skillTable tr:first-child {
     background-color: var(--gray-lv1);

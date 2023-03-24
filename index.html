@@ -11,21 +11,33 @@
     <!-- Below image: Personally designed-->
     <link href="/images/favicon.jpg" rel="icon" />
     <link rel="stylesheet" href="css/style.css" media="screen" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" async/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" async />
     <script defer type="module" src="/js/main.js"></script>
 
 </head>
 <body>
     <!-- Navbar -->
-    <nav id="navbar">
-        <div id="leftNav">
-            <a href="/">Jackson Wheeler</a>
+    <nav class="navbar">
+        <div class="nav-branding-and-icon">
+            <div class="nav-branding">
+                <a href="/">Jackson Wheeler</a>
+            </div>
+            <div class="menu-icon">
+                <span id="test" class="menu-open material-symbols-outlined">
+                    menu
+                </span> 
+                <span class="menu-close material-symbols-outlined">
+                    close
+                </span>
+            </div>
         </div>
-        <div id="rightNav">
-            <a href="#top">Home</a>
-            <a href="#education">Education/Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="/contact.html">Contact Me</a>    
-        </div>
+        <ul class="nav-menu">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#education">Education/Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="/contact.html">Contact Me</a></li>   
+        </ul>
         <!-- Hamburger Menu -->
         <!-- TODO: put hamburger icon here -->
         <!-- <a id="hamburgerMenu" class="menuButton" href="#menuBarView">
