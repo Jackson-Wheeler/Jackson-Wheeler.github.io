@@ -89,6 +89,7 @@
 
         /* Side bar */
         --sb-align: end;
+        --sb-display: flex;
     }
 }
 /* Tablet */
@@ -128,6 +129,7 @@
 
         /* Side bar */
         --sb-align: end;
+        --sb-display: none;
     }
 }
 
@@ -240,6 +242,7 @@ video {
     margin: var(--nav-item-margin);
 }
 
+/* Mobile Menu */
 .menu-icon {
     display: var(--menu-icon-display);
     height: fit-content;
@@ -252,14 +255,48 @@ video {
     font-size: 2rem;
     display: none;
 }
-/* Mobile menu */
+/* Contact Card */
+.contact-card {
+    font-size: var(--fs-300);
+    padding: 0.5em;
+    width: 80%;
+
+    display: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-card a {
+    transition: all 0.05s;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center; 
+    
+}
+.contact-card img {
+    object-fit: scale-down;
+    height: 2rem;
+    margin: .5em;
+}
+.contact-card .mail-icon {
+    height: 1.65rem;
+}
+.contact-card a:hover img {
+    transform: scale(1.02);
+    /* text-decoration: underline; */
+    /* background-color: var(--background-color-darker); */
+}
+/* Nav menu open & close */
 .navbar.open .menu-open {
     display: none;
 }
 .navbar.open .menu-close {
     display: block;
 }
-.navbar.open .nav-menu {
+.navbar.open .nav-menu, .navbar.open .contact-card {
     display: flex;
 }
 
@@ -271,6 +308,9 @@ video {
 }
 .navbar.close .nav-menu {
     display: var(--nav-menu-display);
+}
+.navbar.close .contact-card {
+    display: none;
 }
 
 
@@ -605,17 +645,8 @@ figcaption {
 
 
 /************
- --SIDEBAR-- 
+ --Contact Card-- 
 ************/
-/* Tablet */
-/* @media (min-width: var(--tablet-min)) and (max-width: var(--tablet-max)) {
-
-} */
-
-/* Desktop */
-/* @media (min-width: var(--desktop-min)) {
-
-} */
 
 #rightSection {
     grid-column: var(--grid-rightSidebar);
@@ -642,7 +673,7 @@ figcaption {
     padding: 0 0.5em;
 
 
-    display: flex;
+    display: var(--sb-display);
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -679,6 +710,8 @@ footer {
     border-top: var(--box-border);
     padding: .5em;
 }
+
+
 
 
 
