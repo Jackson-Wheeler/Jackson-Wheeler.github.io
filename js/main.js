@@ -17,23 +17,30 @@ nav_menu_links.forEach((link) => {
 });
 
 function openMenu() {
-    menu_open_icon.style.display = 'none';
-    menu_close_icon.style.display = 'block';
-
-    nav_menu.style.display = 'flex';
-}
-
-function closeMenu() {
-    // Close the mobile if currently in mobile or tablet view
-    let viewMode = getViewMode();
-    if (viewMode == ViewModes.Mobile || viewMode == ViewModes.Tablet) {
-        menu_close_icon.style.display = 'none';
-        menu_open_icon.style.display = 'block';
-        nav_menu.style.display = 'none';
+    if(!isOpen(navbar)) {
+        navbar.classList.toggle('open');
     }
 }
 
+function closeMenu() {
+    if(isOpen(navbar)) {
+        navbar.classList.toggle('open');
+    }
+}
+
+function isOpen(elem) {
+    return elem.classList.contains('open');
+}
+
 /* General */
+window.addEventListener('resize', () =>{
+    setTimeout(onResize, 1);
+});
+
+function onResize() {
+    closeMenu();
+}
+
 function getViewMode() {
     return getComputedStyle(document.documentElement)
     .getPropertyValue('--view-mode');
