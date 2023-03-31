@@ -87,6 +87,9 @@
         --menu-icon-display: none;
         --nav-menu-fs: var(--fs-500);
 
+        /* Main */
+        --main-section-margins: 0.75em 0.75em;
+
         /* Side bar */
         --sb-align: end;
         --sb-display: flex;
@@ -126,6 +129,9 @@
         --nav-item-margin: 0.75em;
         --menu-icon-display: block;
         --nav-menu-fs: var(--fs-600);
+
+        /* Main */
+        --main-section-margins: 0.75em 0;
 
         /* Side bar */
         --sb-align: end;
@@ -358,6 +364,7 @@ h1 {
 ************/
 main {
     grid-column: var(--grid-center);
+    font-size: var(--fs-400);
 
     /* As a flexbox container */
     display: flex;
@@ -369,7 +376,7 @@ main > section:first-child {
 }
 
 main > section {
-    margin: 0.75em 0.75em;
+    margin: var(--main-section-margins);
 }
 
 .contentBorder {
@@ -385,7 +392,6 @@ h2 {
 }
 
 main p {
-    /* font-size: var(--fs-500); */
     margin: 0;
 }
 
@@ -393,10 +399,6 @@ main p {
 /***********
  --ABOUT ME-- 
  ************/
-#aboutMe p {
-    font-size: var(--fs-400);
-}
-
 #aboutMe .contentBorder {
     padding: .75em;
 }
@@ -406,7 +408,6 @@ main p {
  ************/
 #education {
     scroll-margin-top: var(--scroll-margin);
-    font-size: var(--fs-400);
 }
 
 .edCard {
@@ -521,30 +522,79 @@ main p {
 ************/
 #projects {
     scroll-margin-top: var(--scroll-margin);
-    font-size: var(--fs-400);
+}
+
+#projects > section {
+    margin: 1rem 0;
 }
 
 .projectHeader {
     border-bottom: var(--box-border-lv3);
-    margin-bottom: 1vh;
-    padding: 0;
+    font-family: var(--ff-formal);
+    margin-bottom: 0.5em;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: end;
 }
-
-.projectHeader p {
-    font-family: var(--formal-font);
-}
-
 .projectHeader h3 {
     margin: 0;
+    /* margin-left: 0.5em; */
+    width: fit-content;
     font-weight: 400;
     font-size: var(--fs-600);
-
 }
+.projectHeader > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+.projectHeader > div img {
+    width: 2.5rem;
+    /* border: var(--box-border); */
+}
+
+.projectBody {
+    /* font-size: var(--fs-400); */
+}
+
+.temp {
+    display: flex;
+    justify-content: space-around;
+}
+.temp > .overviewTable {
+    margin: 0.25em;
+}
+
+.overviewTable {
+    border-collapse: collapse;
+    margin-top: 0.5em;
+    /* width: 100%; */
+    font-family: var(--ff-formal);
+    /* font-size: var(--fs-300); */
+    text-align: center;
+}
+.overviewTable th, .overviewTable td {
+    border: var(--box-border-lv2);
+    padding: 0.5em;
+}
+.overviewTable strong {
+    font-family: var(--ff-formal-bold);
+    font-weight: 900;
+}
+.overviewTable tr {
+    background-color: var(--gray-lv1);
+}   
+.overviewTable tr:nth-child(2) {
+    background-color: transparent;
+}
+.overviewTable th {
+    font-family: var(--ff-formal-bold);
+    font-weight: 500;
+}
+
 
 .overviewSection {
     margin-bottom: 2vh;
@@ -563,6 +613,7 @@ main p {
     margin-top: 0;
     /* border: var(--box-border); */
 }
+
 
 .descriptionSection {
     margin: 2vh auto;
