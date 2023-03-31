@@ -105,7 +105,7 @@
                     <div class="edDescription" >
                         <p>University Of California, San Diego</p>
                         <p>Bachelors of Science in Computer Science</p>
-                        <p><em>GPA: 3.81</em></p>    
+                        <p><em>GPA: 3.82</em></p>    
                     </div>
                 </div>
             </div>
@@ -247,22 +247,25 @@
                     <section class="projOverview">
                         <h4>Overview</h4>
                         <div class="textBox">
-                            <p>
-                                Developed code to <strong>accurately & efficiently route</strong> and send incoming packets to the next step in the network, given the packet's final destination, and according to the <strong>IP</strong> networking protocol.
-                            </p>
-                            <br>
-                            <p>Includes:</p>
-                            <ul>
-                                <li>
-                                    performing <strong>longest prefix match</strong> in routing table
-                                </li>
-                                <li>
-                                    sending and receiving <strong>ARP</strong> requests and replies
-                                </li>
-                                <li>
-                                    generating & sending <strong>ICMP</strong> error packets and echo replies
-                                </li>
-                            </ul>
+                            <div>
+                                <p>
+                                    Developed code to <strong>accurately & efficiently route</strong> and send incoming packets to the next step in the network, given the packet's final destination, and according to the <strong>IP</strong> networking protocol.
+                                </p>
+                            </div>
+                            <div>
+                                <p>Includes:</p>
+                                <ul>
+                                    <li>
+                                        performing <strong>longest prefix match</strong> on the routing table
+                                    </li>
+                                    <li>
+                                        sending and receiving <strong>ARP</strong> requests and replies
+                                    </li>
+                                    <li>
+                                        generating & sending <strong>ICMP</strong> error packets and echo replies
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </section>
 
@@ -288,14 +291,14 @@
                         <h4>Summary of Implementation</h4>
                         <div class="textBox">
                             <section>
-                                <h5>Starter Code</h5>
+                                <h5>Provided Starter Code</h5>
                                 <p>
                                     Handles interplay with virtual network system, Mininet.
                                 </p>
                             </section>
                             <section>
                                 <h5>My Code</h5>
-                                <div class="IO">
+                                <div>
                                     <p>
                                         <strong class="weak">Input:</strong> Receives incoming packet (as a buffer of data in memory).
                                     </p>
@@ -303,31 +306,16 @@
                                         <strong class="weak">Output:</strong> Outputs a properly constructed outgoing packet (buffer of data) and the corresponding interface this packet should be sent over.
                                     </p>
                                 </div>
-                                <div class="work">
+                                <div>
                                     <p>
-                                        <strong class="weak">Work:</strong> Parses information from packet and based on networking protocols decides what to do next with the packet (i.e. forward it, send it back, etc).
+                                        <strong class="weak">Work:</strong> Parses information from packet. According to networking protocols takes proper action (i.e. sending ARP reply, forwarding IP packet to next step, etc.).
                                     </p>
-                                    <ul>
-                                        <li>
-                                            Classify the Packet
-                                            <ul>
-                                                <li>
-                                                    if ARP packet -> handle ARP packet
-                                                    <ul>
-                                                        <li>
-                                                            if ARP request -> construct & send ARP reply
-                                                        </li>
-                                                        <li>
-                                                            if ARP reply -> cache info & send outstanding packet
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    if IP packet
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                </div>
+                                <div class="boxedNote">
+                                    <div>
+                                        <p>Please contact me for more detailed</p>
+                                        <p>summary of implementation!</p>
+                                    </div>
                                 </div>
                             </section>
                         </div>
@@ -336,31 +324,51 @@
                     <section class="projExtra">
                         <h4>Improving Effeciency</h4>
                         <div class="textBox">
-
+                            <div>
+                                <p>
+                                    <strong class="weak">Attempt 1:</strong> Attempted to implement multi-threading in router to improve performance. Due to threading overhead, performance worsened &rarr; Re-evaluated.
+                                </p>
+                            </div>
+                            <p>
+                                <strong class="weak">Solution:</strong> Implemented improved data structures for storing routing table and router's interface list, dramatically improving lookup time:
+                            </p>
+                            <ul>
+                                <li>
+                                    <em>Longest prefix match:</em> implemented <strong>trie</strong> to store routing table &rarr; constant time longest prefix match
+                                </li>
+                                <li>
+                                    <em>Router's interface lookup:</em> implemented <strong>hash table</strong> for router's interface list &rarr; constant time interface lookup (by interface's IP addresss).
+                                </li>
+                            </ul>
                         </div>
                     </section>
 
                     <section class="projTakeAways">
                         <h4>Take Aways</h4>
                         <div class="textBox">
-
+                            <p></p>
+                            <ul>
+                                <li>
+                                    Implemented virtual router capable of correctly routing packets in any given network topology.
+                                </li>
+                                <li>
+                                    Implemented and utilized important networking protocols: Ethernet, ARP, IP, ICMP.
+                                </li>
+                                <li>
+                                    Improved efficiency by implementing custom data structures (Trie for longest prefix match, Hash 
+                                    Table for router interface lookup)
+                                </li>
+                            </ul>
                         </div>
                     </section>
 
                     <div class="projectFooter">
-                        <div class="noSourceCodeBox">
-                            <p>Source code not publicly available</p>
-                            <p>Please contact me to learn more</p>
+                        <div class="boxedNote">
+                            <div>
+                                <p> - Source code not publicly available - </p>
+                                <p>Contact me to learn more!</p>
+                            </div>
                         </div>
-                        <!-- <div class="sourceCodeLinkBox">
-                            <a href="https://github.com/Jackson-Wheeler/chess_game" target="_blank">
-                                <img src="/images/github_logo.png" alt="GitHub Logo" height="20" width="20" />
-                                <div>
-                                    <p>Source Code not publicly available</p>
-                                </div>
-                            </a>
-                        </div> -->
-                        <!-- <p>Please contact me to learn more</p> -->
                     </div>
 
                 </div> <!-- End of project Body-->
@@ -435,11 +443,13 @@
                     </section>
 
                     <div class="projectFooter">
-                        <div class="sourceCodeLinkBox">
-                            <a href="https://github.com/Jackson-Wheeler/chess_game" target="_blank">
-                                <img src="/images/github_logo.png" alt="GitHub Logo" height="20" width="20" />
-                                <span class="contactLink">Source Code</span>
-                            </a>
+                        <div class="boxedNote">
+                            <div class="sourceCodeLinkBox">
+                                <a href="https://github.com/Jackson-Wheeler/chess_game" target="_blank">
+                                    <img src="/images/github_logo.png" alt="GitHub Logo" height="20" width="20" />
+                                    <span class="contactLink">Source Code</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
         

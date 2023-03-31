@@ -550,6 +550,10 @@ main p {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
 }
+.projectBody > .projectFooter {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 .projectBody h4 {
     font-weight: 400;
     border-bottom: var(--box-border-lv2);
@@ -578,8 +582,20 @@ main p {
 .textBox ul {
     margin: 0;
 }
-.textBox > section {
+.textBox > section, .textBox div {
     margin-bottom: 0.5em;
+}
+
+.boxedNote {
+    display: flex;
+    justify-content: center;
+}
+.boxedNote > div {
+    margin: 0;
+    border: var(--box-border-lv2);
+    padding: 0.25em;
+    width: max-content;
+    text-align: center;
 }
 
 .projectBody .figure1 {
@@ -629,12 +645,9 @@ main p {
     /* border: var(--box-border); */
 }
 .projVisual figcaption p {
-    margin: 0;
+    margin: 0.25em;
 }
 
-.projImpl .work {
-    margin-top: 0.5em;
-}
 
 
 .descriptionSection {
@@ -670,15 +683,6 @@ main p {
     margin: 2vh auto;
 }
 
-.projectFooter {
-    margin: 1rem auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .sourceCodeLinkBox {
     border: var(--box-border-lv2);
     padding: 0.25em;
@@ -706,16 +710,6 @@ main p {
 }
 .sourceCodeLinkBox:hover span {
     text-decoration: underline;
-}
-
-.noSourceCodeBox {
-    border: var(--box-border-lv2);
-    padding: 0.25em;
-    width: max-content;
-    text-align: center;
-}
-.projectFooter > *:last-child {
-    /* font-size: 0.9em; */
 }
 
 
