@@ -11,8 +11,8 @@
     <!-- Below image: Personally designed-->
     <link href="/images/favicon.jpg" rel="icon" />
     <link rel="stylesheet" href="css/style.css" media="screen" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" async/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" async />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
     <script defer type="module" src="/js/main.js"></script>
 
 </head>
@@ -41,19 +41,19 @@
         <div class="contact-card">
             <a href="mailto:jackson.n.wheeler@gmail.com" title="mailto:jackson.n.wheeler@gmail.com">
                 <span>Email</span>
-                <img class="mail-icon" src="/images/email_logo.png" alt="Email Logo" height="60px" />
+                <img class="mail-icon" src="/images/email_logo.png" alt="Email Logo" height="60" />
             </a>
             <a href="https://www.linkedin.com/in/jackson-wheeler-ucsd/" target="_blank" title="https://www.linkedin.com/in/jackson-wheeler-ucsd/">
                 <span>LinkedIn</span>
-                <img src="/images/linkedIn_logo.png" alt="LinkedIn Logo" height="60px" />
+                <img src="/images/linkedIn_logo.png" alt="LinkedIn Logo" height="60" />
             </a>
             <a href="https://github.com/Jackson-Wheeler" target="_blank" title="https://github.com/Jackson-Wheeler">
                 <span>GitHub</span>
-                <img src="/images/github_logo.png" alt="GitHub Logo" height="60px" />
+                <img src="/images/github_logo.png" alt="GitHub Logo" height="60" />
             </a>
             <a href="/resources/Jackson_Wheeler_Resume.pdf" target="_blank" title="Jackson_Wheeler_Resume.pdf">
                 <span>Resume</span>
-                <img src="/images/resume_logo.jpg" alt="Resume logo" height="60px" />
+                <img src="/images/resume_logo.jpg" alt="Resume logo" height="60" />
             </a>
         </div>
     </nav>
@@ -182,13 +182,13 @@
                                 <td>
                                     <!-- <img src="/images/document_icon.png"
                                     title="Document icon" alt="Document icon"
-                                    width="40px"> -->
+                                    width="40"> -->
                                     <p>Active Secret Level Security Clearance</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="/images/south_korea_flag.png" title="South Korean Flag" alt="Small South Korean Flag" width="40px">
+                                    <img src="/images/south_korea_flag.png" title="South Korean Flag" alt="Small South Korean Flag" width="40">
                                     <p>Korean Language Conversational Fluency</p>
                                     
                                 </td>
@@ -215,6 +215,111 @@
         <!-- Projects -->
         <section id="projects">
             <h2>Projects</h2>
+
+            <!-- Router Implementation Project  -->
+            <section id="projRouter">
+                <header class="projectHeader">
+                    <h3>Router Implementation</h3>
+                    <span>March 2023</span>
+                </header>
+
+                <div class="projectBody contentBorder">
+
+                    <figure class="figure1">
+                        <table class="overviewTable">
+                            <tbody>
+                                <tr>
+                                    <th>Language:</th>
+                                    <td>C</td>
+                                </tr>
+                                <tr>
+                                    <th>Tools:</th>
+                                    <td>Wireshark, Mininet, POX, Ubuntu VM</td>
+                                </tr>
+                                <tr>
+                                    <th>Networking Protocols:</th>
+                                    <td>Ethernet, ARP, IP, ICMP</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </figure>
+
+                    <section class="projOverview">
+                        <h4>Overview</h4>
+                        <div class="textBox">
+                            <p>
+                                <!-- Implemented ARP and IP handling of packets received, in order to properly & efficiently route incoming packets to the next device. -->
+
+                                Developed code to <strong>accurately & efficiently route</strong> and send incoming packets to the next step in the network, given the packet's final destination, and according to the <strong>IP</strong> networking protocol.
+                            </p>
+                            <br>
+                            <!-- <p>
+                                Includes performing <strong>longest prefix match</strong> in routing table, sending and receiving ARP requests and replies, and generating and sending ICMP error packets & echo replies.
+                            </p> -->
+                            <p>Includes:</p>
+                            <ul>
+                                <li>
+                                    performing <strong>longest prefix match</strong> in routing table
+                                </li>
+                                <li>
+                                    sending and receiving <strong>ARP</strong> requests and replies
+                                </li>
+                                <li>
+                                    generating & sending <strong>ICMP</strong> error packets and echo replies
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="projDemo">
+                        <h4>Visual</h4>
+                        <figure>
+                            <img src="/images/projRouter/demo.jpg" title="router implementation demonstration" alt="router implementation demonstration" width="80">
+                            <figcaption>Here is a caption</figcaption>
+                        </figure>
+                    </section>
+
+                    <section class="projImpl">
+                        <h4>Summary of Implementation</h4>
+                        <div class="textBox">
+
+                        </div>
+                    </section>
+
+                    <section class="projExtra">
+                        <h4>Improving Effeciency</h4>
+                        <div class="textBox">
+
+                        </div>
+                    </section>
+
+                    <section class="projTakeAways">
+                        <h4>Take Aways</h4>
+                        <div class="textBox">
+
+                        </div>
+                    </section>
+
+                    <div class="projectFooter">
+                        <div class="noSourceCodeBox">
+                            <p>Source code not publicly available</p>
+                            <p>Please contact me to learn more</p>
+                        </div>
+                        <!-- <div class="sourceCodeLinkBox">
+                            <a href="https://github.com/Jackson-Wheeler/chess_game" target="_blank">
+                                <img src="/images/github_logo.png" alt="GitHub Logo" height="20" width="20" />
+                                <div>
+                                    <p>Source Code not publicly available</p>
+                                </div>
+                            </a>
+                        </div> -->
+                        <!-- <p>Please contact me to learn more</p> -->
+                    </div>
+
+                </div> <!-- End of project Body-->
+            </section> <!-- End of project section -->
+
+            <!-- Java Chess Game Project -->
             <section id="chessGameProject">
 
                 <header class="projectHeader">
@@ -243,13 +348,13 @@
                         <figure id="chessProjFigures">
                             <figure>
                                 <picture>
-                                    <img src="/images/chessGame/game_start.jpg" alt="Depiction of terminal screen at Beginning of chess game" width="100px"/>
+                                    <img src="/images/chessGame/game_start.jpg" alt="Depiction of terminal screen at Beginning of chess game" width="100"/>
                                 </picture>
                             <figcaption>Start of Chess Game</figcaption>
                             </figure>
                             <figure>
                                 <picture>
-                                    <img src="/images/chessGame/game_after_move.jpg" alt="Depiction of terminal screen after 1 turn in chess game" width="100px" />
+                                    <img src="/images/chessGame/game_after_move.jpg" alt="Depiction of terminal screen after 1 turn in chess game" width="100" />
                                 </picture>
                             <figcaption>Taking a Move</figcaption>
                             </figure>
@@ -304,19 +409,19 @@
         <div id="sideBar">
             <a href="mailto:jackson.n.wheeler@gmail.com" title="mailto:jackson.n.wheeler@gmail.com">
                 <span>Email</span>
-                <img src="/images/email_logo.png" alt="Email Logo" width="60px" />
+                <img src="/images/email_logo.png" alt="Email Logo" width="60" />
             </a>
             <a href="https://www.linkedin.com/in/jackson-wheeler-ucsd/" target="_blank" title="https://www.linkedin.com/in/jackson-wheeler-ucsd/">
                 <span>LinkedIn</span>
-                <img src="/images/linkedIn_logo.png" alt="LinkedIn Logo" width="60px" />
+                <img src="/images/linkedIn_logo.png" alt="LinkedIn Logo" width="60" />
             </a>
             <a href="https://github.com/Jackson-Wheeler" target="_blank" title="https://github.com/Jackson-Wheeler">
                 <span>GitHub</span>
-                <img src="/images/github_logo.png" alt="GitHub Logo" width="60px" />
+                <img src="/images/github_logo.png" alt="GitHub Logo" width="60" />
             </a>
             <a href="/resources/Jackson_Wheeler_Resume.pdf" target="_blank" title="Jackson_Wheeler_Resume.pdf">
                 <span>Resume</span>
-                <img src="/images/resume_logo.jpg" alt="Resume logo" width="60px" />
+                <img src="/images/resume_logo.jpg" alt="Resume logo" width="60" />
             </a>
         </div>
     </aside>
