@@ -56,8 +56,8 @@
     --fs-600: 1.5rem;  
     --fs-500: 1.25rem; /* Nav */
     --fs-400: 1rem; /* profile subheading, About Me, Education */
-    --fs-300: 0.8rem;
-    --fs-200: 0.5rem;
+    --fs-300: 0.85rem;
+    --fs-200: 0.75rem;
 
 
     /* Other */
@@ -547,20 +547,39 @@ main p {
     padding: 0.25em;
 }
 .projectBody > * {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 .projectBody h4 {
     font-weight: 400;
     border-bottom: var(--box-border-lv2);
     width: max-content;
-    margin: 0 0;
+    margin: 0;
 }
-.projectBody .textBox {
-    margin: 0.5em;
+.projectBody h5 {
+    font-family: var(--ff-gen);
+    font-size: var(--fs-400);
+    font-weight: 400;
+    /* border-bottom: var(--box-border); */
+    text-decoration: var(--border-color-lv2) wavy underline;
+    width: max-content;
+    margin: 0;
 }
 .projectBody strong {
     font-weight: 600;
+}
+.projectBody strong.weak {
+    font-weight: 550;
+}
+
+.textBox {
+    margin: 0.25em 0.5em;
+}
+.textBox ul {
+    margin: 0;
+}
+.textBox > section {
+    margin-bottom: 0.5em;
 }
 
 .projectBody .figure1 {
@@ -592,27 +611,35 @@ main p {
     font-weight: 600;
 }
 
-.textBox ul {
+.projVisual figure {
+    width: fit-content;
+    margin: 0.25em 0;
+    /* border: var(--box-border); */
+}
+.projVisual img {
+    display: block;
+    width: 100%;
+    /* border-bottom: var(--box-border); */
+}
+.projVisual figcaption {
+    margin: 0;
+    text-align: center;
+    font-family: var(--ff-formal);
+    /* font-size: var(--fs-300); */
+    /* border: var(--box-border); */
+}
+.projVisual figcaption p {
     margin: 0;
 }
 
-.projDemo figure {
-    width: fit-content;
-    margin: 0.5em;
-}
-.projDemo img {
-    width: 100%;
+.projImpl .work {
+    margin-top: 0.5em;
 }
 
 
 .descriptionSection {
     margin: 2vh auto;
 }
-
-figcaption {
-    text-align: center;
-}
-
 #chessProjFigures {
     display: flex;
     flex-direction: row;

@@ -248,14 +248,9 @@
                         <h4>Overview</h4>
                         <div class="textBox">
                             <p>
-                                <!-- Implemented ARP and IP handling of packets received, in order to properly & efficiently route incoming packets to the next device. -->
-
                                 Developed code to <strong>accurately & efficiently route</strong> and send incoming packets to the next step in the network, given the packet's final destination, and according to the <strong>IP</strong> networking protocol.
                             </p>
                             <br>
-                            <!-- <p>
-                                Includes performing <strong>longest prefix match</strong> in routing table, sending and receiving ARP requests and replies, and generating and sending ICMP error packets & echo replies.
-                            </p> -->
                             <p>Includes:</p>
                             <ul>
                                 <li>
@@ -271,18 +266,70 @@
                         </div>
                     </section>
 
-                    <section class="projDemo">
+                    <section class="projVisual">
                         <h4>Visual</h4>
                         <figure>
                             <img src="/images/projRouter/demo.jpg" title="router implementation demonstration" alt="router implementation demonstration" width="80">
-                            <figcaption>Here is a caption</figcaption>
+                            <figcaption>
+                                <p>
+                                    Every device in the virtual network that is running my developed packet routing code will correctly & efficiently route packets sent across the network.
+
+                                    <!-- Commands such as <code>ping</code> & <code>pingall</code>, <code>traceroute</code>, and <code>wget</code> (when requested from proper server) all function correctly. -->
+                                </p>
+                                <!-- <br>
+                                <p>
+                                    Commands such as <code>ping</code> & <code>pingall</code>, <code>traceroute</code>, and <code>wget</code> (when requested from proper server) all function correctly.
+                                </p> -->
+                            </figcaption>
                         </figure>
                     </section>
 
                     <section class="projImpl">
                         <h4>Summary of Implementation</h4>
                         <div class="textBox">
-
+                            <section>
+                                <h5>Starter Code</h5>
+                                <p>
+                                    Handles interplay with virtual network system, Mininet.
+                                </p>
+                            </section>
+                            <section>
+                                <h5>My Code</h5>
+                                <div class="IO">
+                                    <p>
+                                        <strong class="weak">Input:</strong> Receives incoming packet (as a buffer of data in memory).
+                                    </p>
+                                    <p>
+                                        <strong class="weak">Output:</strong> Outputs a properly constructed outgoing packet (buffer of data) and the corresponding interface this packet should be sent over.
+                                    </p>
+                                </div>
+                                <div class="work">
+                                    <p>
+                                        <strong class="weak">Work:</strong> Parses information from packet and based on networking protocols decides what to do next with the packet (i.e. forward it, send it back, etc).
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Classify the Packet
+                                            <ul>
+                                                <li>
+                                                    if ARP packet -> handle ARP packet
+                                                    <ul>
+                                                        <li>
+                                                            if ARP request -> construct & send ARP reply
+                                                        </li>
+                                                        <li>
+                                                            if ARP reply -> cache info & send outstanding packet
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    if IP packet
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
                         </div>
                     </section>
 
