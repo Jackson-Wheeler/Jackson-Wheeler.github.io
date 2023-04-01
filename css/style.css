@@ -59,6 +59,8 @@
     --fs-300: 0.85rem;
     --fs-200: 0.75rem;
 
+    /* Projects */
+    --proj-website-img-ar: 7/9;
 
     /* Other */
     --scroll-margin: 3rem;
@@ -632,21 +634,46 @@ main p {
 .projVisual figure {
     width: fit-content;
     margin: 0.25em 0;
-    /* border: var(--box-border); */
 }
 .projVisual img {
     display: block;
     width: 100%;
-    /* border-bottom: var(--box-border); */
 }
 .projVisual figcaption {
     margin: 0;
     text-align: center;
     font-family: var(--ff-formal);
-    /* font-size: var(--fs-300); */
-    /* border: var(--box-border); */
 }
 .projVisual figcaption p {
+    margin: 0.25em;
+}
+
+.projVisual2 figure.outer {
+    width: fit-content;
+    margin: 0.25em 0;
+    display: flex;
+    justify-content: space-around;
+} 
+.projVisual2 figure.inner {
+    margin: 0.25em;
+}
+.projVisual2 div {
+    width: 100%;
+    aspect-ratio: var(--proj-website-img-ar);
+    border: var(--box-border);
+}
+.projVisual2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.projVisual2 figcaption {
+    margin: 0;
+    text-align: center;
+    font-family: var(--ff-formal);
+    font-size: 0.9em;
+}
+.projVisual2 figcaption p {
     margin: 0.25em;
 }
 
