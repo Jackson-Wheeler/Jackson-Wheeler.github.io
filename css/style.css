@@ -524,7 +524,10 @@ main p {
     scroll-margin-top: var(--scroll-margin);
 }
 #projects > section {
-    margin: 1rem 0;
+    margin: 3rem 0;
+}
+#projects > section:first-of-type {
+    margin-top: 1rem;
 }
 
 .projectHeader {
@@ -564,17 +567,16 @@ main p {
     font-family: var(--ff-gen);
     font-size: var(--fs-400);
     font-weight: 400;
-    /* border-bottom: var(--box-border); */
-    text-decoration: var(--border-color-lv2) wavy underline;
+    border-bottom: var(--box-border);
     width: max-content;
     margin: 0;
 }
 .projectBody strong {
-    font-weight: 600;
-}
-.projectBody strong.weak {
     font-weight: 550;
 }
+/* .projectBody strong.weak {
+    font-weight: 550;
+} */
 
 .textBox {
     margin: 0.25em 0.5em;
@@ -648,47 +650,10 @@ main p {
     margin: 0.25em;
 }
 
-
-
-.descriptionSection {
-    margin: 2vh auto;
-}
-#chessProjFigures {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0;
-}
-
-#chessProjFigures figure {
-    border: 4px solid var(--gray-lv1);
-    background-color: var(--gray-lv1);
-    /* box-shadow: 2px 2px 1px var(--border-color-lv2); */
-    font-family: var(--formal-font);
-    font-size: 0.8em;
-    margin: 0.5rem;
-}
-
-#chessProjFigures img {
-    width: 20rem;
-    height: min(23rem);
-}
-
-.descriptionText {
-    margin: 1vh 0.5vw;
-    /* border: var(--box-border); */
-}
-
-.takeawaysSection {
-    margin: 2vh auto;
-}
-
 .sourceCodeLinkBox {
     border: var(--box-border-lv2);
     padding: 0.25em;
     width: max-content;
-
-    overflow: hidden;
 }
 .sourceCodeLinkBox a {
     display: flex;
@@ -702,15 +667,46 @@ main p {
 .sourceCodeLinkBox span {
     padding-left: 0.25em;
 }
-.sourceCodeLinkBox div {
-    margin-left: 0.5em;
-}
 .sourceCodeLinkBox:hover {
     background-color: var(--background-color-darker);
 }
 .sourceCodeLinkBox:hover span {
     text-decoration: underline;
 }
+
+
+
+/* Old */
+.descriptionSection {
+    margin: 2vh auto;
+}
+#chessProjFigures {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+}
+#chessProjFigures figure {
+    border: 4px solid var(--gray-lv1);
+    background-color: var(--gray-lv1);
+    /* box-shadow: 2px 2px 1px var(--border-color-lv2); */
+    font-family: var(--formal-font);
+    font-size: 0.8em;
+    margin: 0.5rem;
+}
+#chessProjFigures img {
+    width: 20rem;
+    height: min(23rem);
+}
+.descriptionText {
+    margin: 1vh 0.5vw;
+    /* border: var(--box-border); */
+}
+.takeawaysSection {
+    margin: 2vh auto;
+}
+
+
 
 
 

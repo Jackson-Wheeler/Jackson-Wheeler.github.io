@@ -279,10 +279,6 @@
 
                                     <!-- Commands such as <code>ping</code> & <code>pingall</code>, <code>traceroute</code>, and <code>wget</code> (when requested from proper server) all function correctly. -->
                                 </p>
-                                <!-- <br>
-                                <p>
-                                    Commands such as <code>ping</code> & <code>pingall</code>, <code>traceroute</code>, and <code>wget</code> (when requested from proper server) all function correctly.
-                                </p> -->
                             </figcaption>
                         </figure>
                     </section>
@@ -372,7 +368,144 @@
                     </div>
 
                 </div> <!-- End of project Body-->
-            </section> <!-- End of project section -->
+            </section> <!-- End of Router project section -->
+
+
+
+            <!-- Sliding Window Project  -->
+            <section id="projSlidingWindow">
+                <header class="projectHeader">
+                    <h3>Sliding Window Protocol</h3>
+                    <span>February 2023</span>
+                </header>
+
+                <div class="projectBody contentBorder">
+
+                    <figure class="figure1">
+                        <table class="overviewTable">
+                            <tbody>
+                                <tr>
+                                    <th>Language:</th>
+                                    <td>C</td>
+                                </tr>
+                                <tr>
+                                    <th>Tools:</th>
+                                    <td>Multi-threading</td>
+                                </tr>
+                                <tr>
+                                    <th>Networking Protocols:</th>
+                                    <td>Sliding Window Protocol, CRC-8 Error Detection, Framing</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </figure>
+
+                    <section class="projOverview">
+                        <h4>Overview</h4>
+                        <div class="textBox">
+                            <div>
+                                <p>
+                                    Implemented Sliding Window Protocol on both the sender and receiver side, ensuring <strong>reliable in-order delivery</strong> of frames between any number of senders and receivers.
+                                </p>
+                            </div>
+                            <div>
+                                <p>Includes:</p>
+                                <ul>
+                                    <li>
+                                        <strong>selective retransmission</strong> of packets after timeout
+                                    </li>
+                                    <li>
+                                        sending <strong>cumulative ACKs</strong> (acknowledgement of received packets)
+                                    </li>
+                                    <li>
+                                        <strong>framing</strong> of messages
+                                    </li>
+                                    <li>
+                                        <strong>CRC-8</strong> error detection & handling
+                                    </li>
+                                    <li>
+                                        TCP-like connection establishment protocol
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="projVisual">
+                        <h4>Visual</h4>
+                        <figure>
+                            <img src="/images/projSlidWindow/demo.jpg" title="sender and receiver visual" alt="sender and receiver visual" width="80">
+                            <figcaption>
+                                <p>
+                                    Example of sender sending a message to a receiver (sliding window protocol not shown).
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </section>
+
+                    <section class="projImpl">
+                        <h4>Summary of Implementation</h4>
+                        <div class="textBox">
+                            <section>
+                                <h5>Provided Starter Code</h5>
+                                <ul>
+                                    <li>construction of senders & receivers (each run on their own thread)</li>
+                                    <li>functionality for sending frames from sender to receiver</li>
+                                    <li>providing message (to send) to the sender</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h5>My Code</h5>
+                                <div>
+                                    <p><strong>Sender:</strong></p>
+                                    <ul>
+                                        <li>Receives message to send</li>
+                                        <ul>
+                                            <li>Performs framing (fragmentation of message into frames that can be sent to the receiver)</li>
+                                            <li>Establishes connection with receiver (SYN & SYN-ACK protocol used)</li>
+                                            <li>Begins sending frames accroding to the sliding window protocol</li>
+                                        </ul>
+                                        <li>Individual retransmission on sent frame's timeout</li>
+                                        <li>Sliding window updated & further frames sent on receiving proper ACK</li>
+                                    </ul>
+                                    <p><strong>Receiver:</strong></p>
+                                    <ul>
+                                        <li>holds a sliding window for each sender it receives from (allows for simultaneous receiving)</li>
+                                        <li>adds received packets to sliding window, updating it and sending out proper cumulative ACKs</li>
+                                        <li>prints out sender's message after all frames have been received</li>
+                                    </ul>
+                                    <p>(CRC-8 implemented on all sent frames & checked on all received frames &rarr; allows for reliable delivery over links with high corruption probability)</p>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+
+                    <section class="projTakeAways">
+                        <h4>Take Aways</h4>
+                        <div class="textBox">
+                            <p></p>
+                            <ul>
+                                <li>Implemented sliding window protocol to ensure <strong>reliable in-order delivery</strong> of messages between senders and receivers</li>
+                                <li>Designed & implemented <strong>sliding window data structure</strong> in order to abstract away sliding window implementation details</li>
+                                <li>Implemented and utilized <strong>important networking protocols</strong>: sliding window, CRC-8 error detection, framing, TCP-like connection establishment</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <div class="projectFooter">
+                        <div class="boxedNote">
+                            <div>
+                                <p> - Source code not publicly available - </p>
+                                <p>Please contact me for more details!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- End of project Body-->
+            </section> <!-- End of Sliding Window project section -->
+
+
+
 
             <!-- Java Chess Game Project -->
             <section id="chessGameProject">
@@ -452,9 +585,7 @@
                             </div>
                         </div>
                     </div>
-        
                 </section>
-                
             </section>
         </section>
         
