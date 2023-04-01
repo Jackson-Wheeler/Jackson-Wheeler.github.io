@@ -631,51 +631,54 @@ main p {
     font-weight: 600;
 }
 
-.projVisual figure {
-    width: fit-content;
-    margin: 0.25em 0;
+/* projVisual */
+.projVisual figcaption {
+    margin: 0;
+    padding: 0.25em;
+    text-align: center;
+    font-family: var(--ff-formal);
+    font-size: 0.9em;
 }
 .projVisual img {
     display: block;
-    width: 100%;
-}
-.projVisual figcaption {
-    margin: 0;
-    text-align: center;
-    font-family: var(--ff-formal);
-}
-.projVisual figcaption p {
-    margin: 0.25em;
 }
 
-.projVisual2 figure.outer {
+figure.oneFig {
+    width: fit-content;
+    margin: 0.25em 0;
+}
+figure.oneFig img {
+    display: block;
+    width: 100%;
+}
+
+figure.special {
+    margin: 0.25em 20%;
+}
+figure.special img {
+    border: var(--box-border);
+}
+
+figure.twoFig {
     width: fit-content;
     margin: 0.25em 0;
     display: flex;
     justify-content: space-around;
 } 
-.projVisual2 figure.inner {
+figure.twoFig figure.inner {
     margin: 0.25em;
 }
-.projVisual2 div {
+figure.twoFig div {
     width: 100%;
     aspect-ratio: var(--proj-website-img-ar);
     border: var(--box-border);
 }
-.projVisual2 img {
+figure.twoFig img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.projVisual2 figcaption {
-    margin: 0;
-    text-align: center;
-    font-family: var(--ff-formal);
-    font-size: 0.9em;
-}
-.projVisual2 figcaption p {
-    margin: 0.25em;
-}
+
 
 .sourceCodeLinkBox {
     border: var(--box-border-lv2);

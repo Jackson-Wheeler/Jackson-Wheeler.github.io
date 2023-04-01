@@ -271,7 +271,7 @@
 
                     <section class="projVisual">
                         <h4>Visual</h4>
-                        <figure>
+                        <figure class="oneFig">
                             <img src="/images/projRouter/demo.jpg" title="router implementation demonstration" alt="router implementation demonstration" width="80">
                             <figcaption>
                                 <p>
@@ -433,7 +433,7 @@
 
                     <section class="projVisual">
                         <h4>Visual</h4>
-                        <figure>
+                        <figure class="oneFig">
                             <img src="/images/projSlidWindow/demo.jpg" title="sender and receiver visual" alt="sender and receiver visual" width="80">
                             <figcaption>
                                 <p>
@@ -519,12 +519,12 @@
                         <table class="overviewTable">
                             <tbody>
                                 <tr>
-                                    <th>Language:</th>
+                                    <th>Languages:</th>
                                     <td>HTML, CSS, JavaScript</td>
                                 </tr>
                                 <tr>
                                     <th>Tools:</th>
-                                    <td></td>
+                                    <td>Browser Developer Tools</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -535,42 +535,33 @@
                         <div class="textBox">
                             <div>
                                 <p>
-                                    Implemented Sliding Window Protocol on both the sender and receiver side, ensuring <strong>reliable in-order delivery</strong> of frames between any number of senders and receivers.
+                                    Developed this portfolio website from scratch, using pure HTML, CSS, and a minimal amount of JavaScript
                                 </p>
                             </div>
                             <div>
-                                <p>Includes:</p>
-                                <ul>
-                                    <li>
-                                        <strong>selective retransmission</strong> of packets after timeout
-                                    </li>
-                                    <li>
-                                        sending <strong>cumulative ACKs</strong> (acknowledgement of received packets)
-                                    </li>
-                                    <li>
-                                        <strong>framing</strong> of messages
-                                    </li>
-                                    <li>
-                                        <strong>CRC-8</strong> error detection & handling
-                                    </li>
-                                    <li>
-                                        TCP-like connection establishment protocol
-                                    </li>
-                                </ul>
+                                <p>Goal: A <strong>simple & straightforward</strong> website designed to display who I am and what qualifications I have for a given job. Designed for <strong>practicality</strong> and <strong>efficiency</strong>, minimizing excess content</p>
                             </div>
                         </div>
                     </section>
 
-                    <section class="projVisual2">
+                    <section class="projVisual">
                         <h4>Visual</h4>
-                        <figure class="outer">
+                        <!-- <figure class="oneFig special">
+                            <img src="/images/projWebsite/website_header.png" title="header of website" alt="header of website" width="80">
+                            <figcaption>
+                                <p>
+                                    Header of the website
+                                </p>
+                            </figcaption>
+                        </figure> -->
+                        <figure class="twoFig">
                             <figure class="inner">
                                 <div>
                                     <img src="/images/projWebsite/html_site.png" title="html only version of website" alt="html only version of website" width="80">
                                 </div>
                                 <figcaption>
                                     <p>
-                                        Image of website in pure HTML
+                                        Image of website in progress, no CSS or JavaScript added yet.
                                     </p>
                                 </figcaption>
                             </figure>
@@ -588,59 +579,36 @@
                     </section>
 
                     <section class="projImpl">
-                        <h4>Summary of Implementation</h4>
+                        <h4>Summary</h4>
                         <div class="textBox">
-                            <section>
-                                <h5>Provided Starter Code</h5>
-                                <ul>
-                                    <li>construction of senders & receivers (each run on their own thread)</li>
-                                    <li>functionality for sending frames from sender to receiver</li>
-                                    <li>providing message (to send) to the sender</li>
-                                </ul>
-                            </section>
-                            <section>
-                                <h5>My Code</h5>
-                                <div>
-                                    <p><strong>Sender:</strong></p>
-                                    <ul>
-                                        <li>Receives message to send</li>
-                                        <ul>
-                                            <li>Performs framing (fragmentation of message into frames that can be sent to the receiver)</li>
-                                            <li>Establishes connection with receiver (SYN & SYN-ACK protocol used)</li>
-                                            <li>Begins sending frames accroding to the sliding window protocol</li>
-                                        </ul>
-                                        <li>Individual retransmission on sent frame's timeout</li>
-                                        <li>Sliding window updated & further frames sent on receiving proper ACK</li>
-                                    </ul>
-                                    <p><strong>Receiver:</strong></p>
-                                    <ul>
-                                        <li>holds a sliding window for each sender it receives from (allows for simultaneous receiving)</li>
-                                        <li>adds received packets to sliding window, updating it and sending out proper cumulative ACKs</li>
-                                        <li>prints out sender's message after all frames have been received</li>
-                                    </ul>
-                                    <p>(CRC-8 implemented on all sent frames & checked on all received frames &rarr; allows for reliable delivery over links with high corruption probability)</p>
-                                </div>
-                            </section>
+                            <p>While learning crucial Web Development skills and strategies in class, built up a portfolio website in a <strong>progressive enhancement</strong> style.</p>
+                            <p>In all cases focusing on <strong>user experience</strong>:</p>
+                            <ul>
+                                <li>Semantic HTML (&rarr; improved accessibility)</li>
+                                <li>Responsive CSS for viewing on different devices (&rarr; improved usability & experience)</li>
+                                <li>Minimizing JS & large resources (&rarr; improved performance)</li>
+                            </ul>
                         </div>
                     </section>
 
                     <section class="projTakeAways">
                         <h4>Take Aways</h4>
                         <div class="textBox">
-                            <p></p>
                             <ul>
-                                <li>Implemented sliding window protocol to ensure <strong>reliable in-order delivery</strong> of messages between senders and receivers</li>
-                                <li>Designed & implemented <strong>sliding window data structure</strong> in order to abstract away sliding window implementation details</li>
-                                <li>Implemented and utilized <strong>important networking protocols</strong>: sliding window, CRC-8 error detection, framing, TCP-like connection establishment</li>
+                                <li><strong>Challenged</strong> myself to <strong>implement newly learned skills</strong> (HTML, CSS, and JavaScript) in a meaningful and important project</li>
+                                <li>Further <strong>developed debugging and problem solving</strong> skills while working with new languages & tools</li>
+                                <li>Developed with <strong>user experience in mind</strong>: usability, performance, accessibility</li>
                             </ul>
                         </div>
                     </section>
 
                     <div class="projectFooter">
                         <div class="boxedNote">
-                            <div>
-                                <p> - Source code not publicly available - </p>
-                                <p>Please contact me for more details!</p>
+                            <div class="sourceCodeLinkBox">
+                                <a href="https://github.com/Jackson-Wheeler/jackson-wheeler.github.io" target="_blank">
+                                    <img src="/images/github_logo.png" alt="GitHub Logo" width="20" />
+                                    <span class="contactLink">Source Code</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -649,6 +617,116 @@
             </section> <!-- End of Sliding Window project section -->
 
 
+
+            <!-- Website Project  -->
+            <section id="projCompiler">
+                <header class="projectHeader">
+                    <h3>MiniC Compiler</h3>
+                    <span>Fall 2022</span>
+                </header>
+
+                <div class="projectBody contentBorder">
+
+                    <figure class="figure1">
+                        <table class="overviewTable">
+                            <tbody>
+                                <tr>
+                                    <th>Languages:</th>
+                                    <td>Java, MiniC (Subset of C)</td>
+                                </tr>
+                                <tr>
+                                    <th>Tools:</th>
+                                    <td>Bash scripts</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </figure>
+
+                    <section class="projOverview">
+                        <h4>Overview</h4>
+                        <div class="textBox">
+                            <div>
+                                <p>
+                                    Developed this portfolio website from scratch, using pure HTML, CSS, and a minimal amount of JavaScript
+                                </p>
+                            </div>
+                            <div>
+                                <p>Goal: A <strong>simple & straightforward</strong> website designed to display who I am and what qualifications I have for a given job. Designed for <strong>practicality</strong> and <strong>efficiency</strong>, minimizing excess content</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="projVisual">
+                        <h4>Visual</h4>
+                        <!-- <figure class="oneFig special">
+                            <img src="/images/projWebsite/website_header.png" title="header of website" alt="header of website" width="80">
+                            <figcaption>
+                                <p>
+                                    Header of the website
+                                </p>
+                            </figcaption>
+                        </figure> -->
+                        <figure class="twoFig">
+                            <figure class="inner">
+                                <div>
+                                    <img src="/images/projWebsite/html_site.png" title="html only version of website" alt="html only version of website" width="80">
+                                </div>
+                                <figcaption>
+                                    <p>
+                                        Image of website in progress, no CSS or JavaScript added yet.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                            <figure class="inner">
+                                <div>
+                                    <img src="/images/projWebsite/wireframe.jpg" title="wireframe of website" alt="wireframe of website" width="80">
+                                </div>
+                                <figcaption>
+                                    <p>
+                                        Original wireframe of proposed design of website
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </figure>
+                    </section>
+
+                    <section class="projImpl">
+                        <h4>Summary</h4>
+                        <div class="textBox">
+                            <p>While learning crucial Web Development skills and strategies in class, built up a portfolio website in a <strong>progressive enhancement</strong> style.</p>
+                            <p>In all cases focusing on <strong>user experience</strong>:</p>
+                            <ul>
+                                <li>Semantic HTML (&rarr; improved accessibility)</li>
+                                <li>Responsive CSS for viewing on different devices (&rarr; improved usability & experience)</li>
+                                <li>Minimizing JS & large resources (&rarr; improved performance)</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="projTakeAways">
+                        <h4>Take Aways</h4>
+                        <div class="textBox">
+                            <ul>
+                                <li><strong>Challenged</strong> myself to <strong>implement newly learned skills</strong> (HTML, CSS, and JavaScript) in a meaningful and important project</li>
+                                <li>Further <strong>developed debugging and problem solving</strong> skills while working with new languages & tools</li>
+                                <li>Developed with <strong>user experience in mind</strong>: usability, performance, accessibility</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <div class="projectFooter">
+                        <div class="boxedNote">
+                            <div class="sourceCodeLinkBox">
+                                <a href="https://github.com/Jackson-Wheeler/jackson-wheeler.github.io" target="_blank">
+                                    <img src="/images/github_logo.png" alt="GitHub Logo" width="20" />
+                                    <span class="contactLink">Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- End of project Body-->
+            </section> <!-- End of Sliding Window project section -->
 
 
             <!-- Java Chess Game Project -->
