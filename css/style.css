@@ -63,7 +63,7 @@
     --proj-website-img-ar: 7/9;
 
     /* Other */
-    --scroll-margin: 3rem;
+    --scroll-margin: 4rem;
 }
 
 /*****************
@@ -177,6 +177,10 @@ img,
 picture,
 video {
   max-width: 100%;
+}
+
+*[id] {
+    scroll-margin-top: var(--scroll-margin);
 }
 
 
@@ -408,10 +412,6 @@ main p {
 /***********
  --EDUCATION-- 
  ************/
-#education {
-    scroll-margin-top: var(--scroll-margin);
-}
-
 .edCard {
     padding: 0;
     margin-bottom: 0.75em;
@@ -522,9 +522,6 @@ main p {
 /************
  --PROJECTS-- 
 ************/
-#projects {
-    scroll-margin-top: var(--scroll-margin);
-}
 #projects > section {
     margin: 3rem 0;
 }
@@ -655,8 +652,11 @@ figure.oneFig img {
 figure.special {
     margin: 0.25em 20%;
 }
-figure.special img {
+figure.special img, figure.special2 img {
     border: var(--box-border);
+}
+figure.special2 {
+    margin: 0.5em 0.5em;
 }
 
 figure.twoFig {
