@@ -641,7 +641,6 @@ main p {
 }
 
 figure.oneFig {
-    width: fit-content;
     margin: 0.25em 0;
 }
 figure.oneFig img {
@@ -677,6 +676,15 @@ figure.twoFig img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+figure.video {
+    margin: 0.5em 30%;
+}
+figure.video iframe {
+    width: 100%;
+    aspect-ratio: 1.63;
+    border: var(--box-border);
 }
 
 
