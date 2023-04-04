@@ -8,12 +8,12 @@
     <meta name="keywords" content="Jackson Wheeler, Portfolio, Software, Engineer, Developer" />
     <meta name="author" content="Jackson Wheeler" />
     <title>Jackson Wheeler: Home page</title>
-    <!-- Below image: Personally designed-->
     <link href="/images/favicon.jpg" rel="icon" />
     <link rel="stylesheet" href="css/style.css" media="screen" />
+    <script defer type="module" src="/js/main.js"></script>
+    <!-- Icons for hamburger menu -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
-    <script defer type="module" src="/js/main.js"></script>
 
 </head>
 <body>
@@ -24,7 +24,7 @@
                 <a href="/">Jackson Wheeler</a>
             </div>
             <div class="menu-icon">
-                <span id="test" class="menu-open material-symbols-outlined">
+                <span class="menu-open material-symbols-outlined">
                     menu
                 </span> 
                 <span class="menu-close material-symbols-outlined">
@@ -35,8 +35,9 @@
         <ul class="nav-menu">
             <li><a href="#top">Home</a></li>
             <li><a href="#education">Education/Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="/contact.html">Contact Me</a></li>   
+            <!-- <li><a href="/contact.html">Contact Me</a></li>    -->
         </ul>
         <div class="contact-card">
             <a href="mailto:jackson.n.wheeler@gmail.com" title="mailto:jackson.n.wheeler@gmail.com">
@@ -60,9 +61,9 @@
 
 
     <!-- Header -->
-    <header id="mainHeader">
-        <article id="profileHeading">
-            <picture id="profilePic">
+    <header class="mainHeader">
+        <article class="profileHeading">
+            <picture class="profilePic">
                 <source srcset="/images/profile_photo.webp"
                 type="image/webp" />
                 <img src="/images/profile_photo.jpg"
@@ -136,7 +137,7 @@
                             </tr>
                             <tr>
                                 <th>University Courses:</th>
-                                <td><strong>Computer Networks</strong>, Compiler Design</td>
+                                <td><strong>Computer Networks</strong>, Compiler Design, (WIP: Operating Systems, Digital Systems)</td>
                             </tr>
                         </tbody>
                     </table>
@@ -187,10 +188,11 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <img src="/images/south_korea_flag.png" title="South Korean Flag" alt="Small South Korean Flag" width="40">
-                                    <p>Korean Language Conversational Fluency</p>
-                                    
+                                <td class="icon">
+                                    <div class="icon">
+                                        <img src="/images/south_korea_flag.png" title="South Korean Flag" alt="Small South Korean Flag" width="40">
+                                        <p>Korean Language Conversational Fluency</p>
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>
