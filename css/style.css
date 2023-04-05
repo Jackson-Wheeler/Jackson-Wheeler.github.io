@@ -390,6 +390,10 @@ main p {
     margin: 0;
 }
 
+strong {
+    font-weight: 700;
+}
+
 
 /***********
  --ABOUT ME-- 
@@ -438,7 +442,7 @@ main p {
 }
 
 .edDescription > p:first-child {
-    font-weight: 500;
+    font-weight: 900;
 }
 
 /************
@@ -468,9 +472,6 @@ main p {
 .skillTable th, .skillTable td {
     border: var(--box-border-lv2);
     padding: 0.5em;
-}
-.skillTable strong {
-    font-weight: 550;
 }
 .skillTable tr:first-child {
     background-color: var(--gray-lv1);
@@ -573,9 +574,6 @@ main p {
     width: max-content;
     margin: 0;
 }
-.workBody strong {
-    font-weight: 550;
-}
 
 .workBody header {
     display: flex;
@@ -645,12 +643,6 @@ main p {
     width: max-content;
     margin: 0;
 }
-.projectBody strong {
-    font-weight: 550;
-}
-/* .projectBody strong.weak {
-    font-weight: 550;
-} */
 
 .textBox {
     margin: 0.25em 0.5em;

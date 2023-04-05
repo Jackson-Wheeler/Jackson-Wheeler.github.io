@@ -520,12 +520,13 @@
                                 <div>
                                     <p><strong>Sender:</strong></p>
                                     <ul>
-                                        <li>Receives message to send</li>
-                                        <ul>
-                                            <li>Performs framing (fragmentation of message into frames that can be sent to the receiver)</li>
-                                            <li>Establishes connection with receiver (SYN & SYN-ACK protocol used)</li>
-                                            <li>Begins sending frames accroding to the sliding window protocol</li>
-                                        </ul>
+                                        <li>Receives message to send
+                                            <ul>
+                                                <li>Performs framing (fragmentation of message into frames that can be sent to the receiver)</li>
+                                                <li>Establishes connection with receiver (SYN & SYN-ACK protocol used)</li>
+                                                <li>Begins sending frames accroding to the sliding window protocol</li>
+                                            </ul>
+                                        </li>
                                         <li>Individual retransmission on sent frame's timeout</li>
                                         <li>Sliding window updated & further frames sent on receiving proper ACK</li>
                                     </ul>
