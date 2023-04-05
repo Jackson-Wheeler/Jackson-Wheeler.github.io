@@ -2,27 +2,16 @@
     /* border: var(--test-border) !important; */
 }
 
-@font-face {
+/* @font-face {
     font-family: "Montserrat";
-    /* font-style: normal; */
     font-display: auto;
     src: url(/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
-}
-@font-face {
+} */
+/* @font-face {
     font-family: "Nanum";
     font-display: auto;
     src: url(/fonts/Nanum_Myeongjo/NanumMyeongjo-Regular.ttf);
-}
-@font-face {
-    font-family: "NanumBold";
-    font-display: auto;
-    src: url(/fonts/Nanum_Myeongjo/NanumMyeongjo-Bold.ttf);
-}
-@font-face {
-    font-family: "HelveticaNeueThin";
-    font-display: auto;
-    src: url(/fonts/HelveticaNeueThin/HelveticaNeueThin.ttf);
-}
+} */
 
 :root {
     /* color */
@@ -44,10 +33,8 @@
     --test-border: 1px solid red;
 
     /* fonts */
-    --ff-gen: "Montserrat", cursive;
-    --ff-formal: "Nanum", cursive;
-    --ff-formal-bold: "NanumBold", cursive;
-    --ff-3: "HelveticaNeueThin", cursive;
+    --ff-gen: 'Montserrat', Georgia, serif;
+    --ff-formal: 'Nanum Myeongjo', 'Times New Roman', serif;
 
     /* font sizing */
     --fs-xl: 3.5rem; /* h1 */
@@ -701,10 +688,6 @@ main p {
     border: var(--box-border-lv2);
     padding: 0.25em;
 }
-.overviewTable strong {
-    font-family: var(--ff-formal-bold);
-    font-weight: 900;
-}
 .overviewTable tr {
     background-color: var(--gray-lv1);
 }   
@@ -712,8 +695,7 @@ main p {
     background-color: transparent;
 }
 .overviewTable th {
-    /* font-family: var(--ff-formal-bold); */
-    font-weight: 600;
+    font-weight: 400;
 }
 
 /* projVisual */
