@@ -530,13 +530,13 @@ li.icon img {
 /************
  --EXPERIENCE-- 
 ************/
-#experience > section {
+#work > section {
     margin: 3rem 0;
 }
-#experience > section:first-of-type {
+#work > section:first-of-type {
     margin-top: 0.5rem;
 }
-#experience > section:last-of-type {
+#work > section:last-of-type {
     margin-bottom: 0.5rem;
 }
 
