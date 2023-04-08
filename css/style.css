@@ -391,7 +391,7 @@ main p {
 }
 
 strong {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 
@@ -439,10 +439,6 @@ strong {
 
 .edDescription {
     margin-left: 1.5rem;
-}
-
-.edDescription > p:first-child {
-    font-weight: 900;
 }
 
 /************
