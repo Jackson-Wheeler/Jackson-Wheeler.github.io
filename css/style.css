@@ -759,7 +759,7 @@ figure.twoFig img {
 }
 
 figure.video {
-    margin: 0.5em 30%;
+    margin: 0.5em 0em;
 }
 figure.video iframe {
     width: 100%;
