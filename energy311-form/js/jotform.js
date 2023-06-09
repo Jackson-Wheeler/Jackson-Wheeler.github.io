@@ -2420,7 +2420,7 @@ var JotForm = {
             // ***EDITING STARTING HERE***
             var xhr = new XMLHttpRequest();
             xhr.withCredentials = true;
-            POST_URL = "submit/"
+            POST_URL = "http://localhost:8000/posting"
             xhr.open('POST', POST_URL, true);
             xhr.addEventListener('load', function () {
                 var response = this;
@@ -2461,7 +2461,11 @@ var JotForm = {
                     }
                 } 
             }
-            xhr.send(new FormData(frm));
+            // Edit
+            fdata = new FormData(frm);
+            json = {};
+            json["name"] = fdata.get("form").get("q6_businessName")
+            xhr.send(json);
         }else{
           frm.submit();
           frm.writeAttribute('target', '');
