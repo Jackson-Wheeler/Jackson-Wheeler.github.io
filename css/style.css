@@ -690,6 +690,15 @@ li img {
 .projVisual img {
     display: block;
 }
+.projVisual p {
+    padding: 0.25em;
+}
+.projVisual a {
+    color: blue;
+}
+.projVisual a:hover {
+    text-decoration: underline;
+}
 
 figure.oneFig {
     margin: 0.25em 0;
