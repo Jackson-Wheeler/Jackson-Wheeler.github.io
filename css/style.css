@@ -672,7 +672,7 @@ li img {
 .overviewTable tr {
     background-color: var(--gray-lv1);
 }   
-.overviewTable tr:nth-child(3) {
+.overviewTable .noBackground {
     background-color: transparent;
 }
 .overviewTable th {

@@ -231,7 +231,7 @@
                         <div class="textBox">
                             <div>
                                 <p>
-                                    Took the <strong>lead</strong> in developing code for the automated testing of a military Windows application
+                                    Took the <strong>lead</strong> in developing code for the automated testing of a military Windows application (Java)
                                 </p>
                             </div>
                         </div>
@@ -273,7 +273,7 @@
             <section id="projIoT" class="contentBorder">
                 <a class="accordion projectHeader">
 					<h3><img class="" src="images/projIOT/iot_icon6.png" height="20">
-						(In Progress) End-to-End IoT Project
+						IoT Project - Embedded Team (C++)
 						<span>(Spring 2023)</span></h3>
 				</a>
 
@@ -284,11 +284,15 @@
                             <tbody>
                                 <tr>
                                     <th>Languages:</th>
-                                    <td>C, Python, SQL, JavaScript, HTML</td>
+                                    <td>C++</td>
                                 </tr>
                                 <tr>
                                     <th>Tools:</th>
-                                    <td>Arduino IDE, Apache, APIs, MySQLWorkbench</td>
+                                    <td>Arduino IDE, VSCode PlatformIO</td>
+                                </tr>
+                                <tr class="noBackground">
+                                    <th>Other:</th>
+                                    <td>Embedded WiFi, BLE, API Calls</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -299,38 +303,219 @@
                         <div class="textBox">
                             <div>
                                 <p>
-                                    Deploying Bluetooth sensors (ESP32 Boards) on the UCSD campus to <b>record</b>, <b>analyze</b>, and <b>visualize</b> population density in RIMAC Fitness Center.
+                                    Deployed C++ code on ~25 IoT devices (ESP32 Arduino Boards) for data collection in RIMAC (UCSD's Fitness Center) during May 2023. Each board records all nearby bluetooth beaconing devices and their signal strength, then logs that data to our backend API through HTTP.
                                 </p>
                             </div>
                             <div>
                                 <p>Includes:</p>
                                 <ul>
                                     <li>
-                                        Developed <b>Embedded</b> Code (C) to deploy small ESP32 Development Board - Bluetooth scanning, WiFi capabilities, continues API calls
+                                        Overseeing of <strong>location, placement, and operation</strong> of ~25 IoT devices for data collection
                                     </li>
                                     <li>
-                                        Developing API (Python) to receive ESP32 device API calls & input data into SQL database
+                                        Implementing <strong>WiFi</strong> & <strong>BLE</strong> capabilities onto embedded Arduino boards
                                     </li>
                                     <li>
-                                        Developing code to analyze the recorded data
-                                    </li>
-                                    <li>
-                                        Displaying the data visually (JavaScript, HTML, CSS)
+                                        Implementing <strong>API calls</strong> from embedded devices to log data to API
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </section>
 
+                    <section class="projTakeAways">
+                        <h4>Take Aways</h4>
+                        <div class="textBox">
+                            <p></p>
+                            <ul>
+                                <li>
+                                    Learned to build <strong>reliable</strong> & <strong>error recovering</strong> code on embedded devices
+                                </li>
+                                <li>
+                                    Learned to <strong>communicate</strong> & <strong>work together</strong> with other teams (i.e. API, Analytics, UI) unto the realization of our final product
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <div class="projectFooter">
+                        <div class="boxedNote">
+                            <div class="sourceCodeLinkBox">
+                                <a href="https://github.com/Jackson-Wheeler/cse191-embedded" target="_blank">
+                                    <img src="/images/github_logo.png" alt="GitHub Logo" width="20" />
+                                    <span class="contactLink">Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div></div> <!-- End of project Body-->
             </section> <!-- End of project section -->
+
+
+            <!-- API - IoT to SQL  -->
+            <section id="projAPI" class="contentBorder">
+                <a class="accordion projectHeader">
+					<h3><img class="" src="images/projAPI/api_icon.png" height="20">
+						API - IoT Device to SQL (Python)
+						<span>(Spring 2023)</span></h3>
+				</a>
+
+                <div class="panel"><div class="projectBody">
+
+                    <figure class="figure1">
+                        <table class="overviewTable">
+                            <tbody>
+                                <tr>
+                                    <th>Languages:</th>
+                                    <td>Python, SQL</td>
+                                </tr>
+                                <tr>
+                                    <th>Tools:</th>
+                                    <td>Apache, MySQLWorkbench</td>
+                                </tr>
+                                <tr class="noBackground">
+                                    <th>Python Libraries</th>
+                                    <td>Uvicorn, FastAPI, PyMySQL</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </figure>
+
+                    <section class="projOverview">
+                        <h4>Overview</h4>
+                        <div class="textBox">
+                            <div>
+                                <p>
+                                    Implemented API that logs data from IoT devices, through HTTP request, to our backed SQL database. Also implemented API methods for user to view the SQL data.
+                                </p>
+                            </div>
+                            <div>
+                                <p>Includes:</p>
+                                <ul>
+                                    <li>
+                                        <strong>Uvicorn</strong> to run our code as a server
+                                    </li>
+                                    <li>
+                                        <strong>FastAPI</strong> to receive and handle API calls
+                                    </li>
+                                    <li>
+                                        <strong>PyMySQL</strong> to upload to and downlaod from our SQL database
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section class="projTakeAways">
+                        <h4>Take Aways</h4>
+                        <div class="textBox">
+                            <p></p>
+                            <ul>
+                                <li>
+                                    Deep <strong>understanding of APIs</strong> &rightarrow; understanding <strong>front-end to back-end integration</strong>, <strong>IoT systems</strong>, etc.
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <div class="projectFooter">
+                        <div class="boxedNote">
+                            <div class="sourceCodeLinkBox">
+                                <a href="https://github.com/Jackson-Wheeler/serverAPI" target="_blank">
+                                    <img src="/images/github_logo.png" alt="GitHub Logo" width="20" />
+                                    <span class="contactLink">Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div></div> <!-- End of project Body-->
+            </section> <!-- End of project section -->
+
+
+            <!-- Nachos OS Project  -->
+            <section id="projOS" class="contentBorder">
+                <a class="accordion projectHeader">
+					<h3><img class="" src="images/projOS/os_icon.png" height="20">
+						Implementing OS (Java)
+						<span>(Spring 2023)</span></h3>
+				</a>
+
+                <div class="panel"><div class="projectBody">
+
+                    <figure class="figure1">
+                        <table class="overviewTable">
+                            <tbody>
+                                <tr>
+                                    <th>Languages:</th>
+                                    <td>Java</td>
+                                </tr>
+                                <tr class="noBackground">
+                                    <th>Concepts:</th>
+                                    <td>Threading, Multiprogramming, Virtual Memory</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </figure>
+
+                    <section class="projOverview">
+                        <h4>Overview</h4>
+                        <div class="textBox">
+                            <div>
+                                <p>
+                                    Implemented Operating System concepts in the Nachos operating system. Nachos is a Java application written to perform the functions of a real OS, but with missing implementations that would be filled in by us, the students.
+                                </p>
+                            </div>
+                            <div>
+                                <p>Accomplished:</p>
+                                <ul>
+                                    <li>
+                                        Implemented <strong>thread system</strong> in the Nachos OS
+                                    </li>
+                                    <li>
+                                        Implemented <strong>system calls</strong> and support for <strong>multiprogramming</strong> through <strong>paging</strong>
+                                    </li>
+                                    <li>
+                                        Implemented more sophisticated memory management through <strong>on-demand page allocation</strong> and <strong>swapping</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="projTakeAways">
+                        <h4>Take Aways</h4>
+                        <div class="textBox">
+                            <p></p>
+                            <ul>
+                                <li>
+                                    Developed <strong>deep understanding</strong> of Operating Systems and related concepts, gaining experience through implementation
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <div class="projectFooter">
+                        <div class="boxedNote">
+                            <div>
+                                <p> - Source code not publicly available - </p>
+                                <p>Contact me to learn more!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div></div> <!-- End of project Body-->
+            </section> <!-- End of project section -->
+
 
 
             <!-- C# ChatGPT Console  -->
             <section id="projConsole" class="contentBorder">
                 <a class="accordion projectHeader">
                     <h3><img src="images/projConsole/terminal_icon2.png" height="20">
-						C# ChatGPT Console
+						ChatGPT Console (C#)
 						<span>(May 2023)</span></h3>
 				</a>
 
@@ -409,7 +594,7 @@
             <section id="projRouter" class="contentBorder">
                 <a class="accordion projectHeader">
                     <h3><img class="" src="images/projRouter/router_icon2.png">
-						Router Implementation
+					    Router Implementation (C)
 						<span>(March 2023)</span></h3>
 				</a>
 
@@ -426,7 +611,7 @@
                                     <th>Tools:</th>
                                     <td>Wireshark, Mininet, POX, Ubuntu VM</td>
                                 </tr>
-                                <tr>
+                                <tr class="noBackground">
                                     <th>Networking Protocols:</th>
                                     <td>Ethernet, ARP, IP, ICMP</td>
                                 </tr>
@@ -566,7 +751,7 @@
             <section id="projSlidingWindow" class="contentBorder">
                 <a class="accordion projectHeader">
                     <h3><img src="images/projSlidWindow/tcp_icon.png">
-						Sliding Window Protocol
+						Sliding Window Protocol (C)
 						<span>(February 2023)</span></h3>
 				</a>
 
@@ -583,7 +768,7 @@
                                     <th>Tools:</th>
                                     <td>Multi-threading</td>
                                 </tr>
-                                <tr>
+                                <tr class="noBackground">
                                     <th>Networking Protocols:</th>
                                     <td>Sliding Window Protocol, CRC-8 Error Detection, Framing</td>
                                 </tr>
@@ -702,7 +887,7 @@
             <section id="projWebsite" class="contentBorder">
                 <a class="accordion projectHeader">
                     <h3><img src="images/projWebsite/web_dev_icon.png">
-						This Website!
+						This Website! (HTML, CSS, JS)
 						<span>(Winter 2023)</span></h3>
 				</a>
 
@@ -815,7 +1000,7 @@
             <section id="projCompiler" class="contentBorder">
                 <a class="accordion projectHeader">
                     <h3><img src="images/projCompiler/gear.png">
-						MiniC Compiler
+						MiniC Compiler (Java)
 						<span>(Fall 2022)</span></h3>
 				</a>
 
@@ -865,7 +1050,7 @@
              <section id="projZooApp" class="contentBorder">
                 <a class="accordion projectHeader">
                     <h3><img src="images/projZooApp/andriod_icon.png">
-						San Diego Zoo Exhibit App
+						San Diego Zoo Exhibit App (Java)
 						<span>(Spring 2022)</span></h3>
 				</a>
 
@@ -882,7 +1067,7 @@
                                     <th>Tools:</th>
                                     <td>Android Studio</td>
                                 </tr>
-                                <tr>
+                                <tr class="noBackground">
                                     <th>Other:</th>
                                     <td>Agile Development Process</td>
                                 </tr>
@@ -931,7 +1116,7 @@
             <section id="projMutFund" class="contentBorder">
                 <a class="accordion projectHeader">
                     <h3><img src="images/projMutFund/analysis_icon2.png">
-						Mutual Fund Analysis Project
+						Mutual Fund Analysis Project (Python)
 						<span>(Summer 2020)</span></h3>
 				</a>
 
@@ -991,7 +1176,7 @@
             <section id="projSnakeGame" class="contentBorder">
                 <a class="accordion projectHeader">
                     <h3><img src="images/projSnake/snake_game_icon.png">
-						Reinforced Learning Snake Game
+						Reinforced Learning Snake Game (Python)
 						<span>(Summer 2020)</span></h3>
 				</a>
 
@@ -1060,7 +1245,7 @@
             <section id="projPhoneSpecs" class="contentBorder">
                 <a class="accordion projectHeader">
                     <h3><img src="images/projWebScrape/web_crawl_icon2.png">
-						Phone Specs Web Scraping
+						Phone Specs Web Scraping (Python)
 						<span>(Summer 2020)</span></h3>
 				</a>
 
@@ -1108,7 +1293,7 @@
             <section id="chessGameProject" class="contentBorder">
                 <a class="accordion projectHeader">
                     <h3><img src="images/projChess/chess_icon.jpg">
-						Java Chess Game
+						Chess Game (Java)
 						<span>(Spring 2020)</span></h3>
 				</a>
 
