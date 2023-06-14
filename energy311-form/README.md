@@ -1,5 +1,7 @@
 # Application Project for Energy311
 
+Live version of the form found here: https://jackson-wheeler.github.io/energy311-form/
+
 ## Explanation
 
 I utilized Jotform in order to construct the visual layout and provide the functionality of the form itself. This means the form is visually appealing and easy to modify for future changes. I then downloaded the source code of this Jotform form, allowing me to both run the form on my own website & additionally add the API POSTing functionality.
@@ -8,7 +10,10 @@ Through modification of the source code I inputed functionality that POSTs the f
 
 Overall my methodology was to get a form that meets the requirements up and running quickly and efficiently. Further functionality can be added on top.
 
-Note on POSTing to the API: Because the client side is inherently insecure, it would be necessary to validate the inputted form data on the server side, rather than the client side.
+Note on POSTing to the API: Because the client side is inherently insecure, it would be necessary to validate the inputted form data on the server side, rather than the client side. A future improvement to this code would to add a server that receives the form data submission, cleanses it of malicious data, then sends the data to the REST API.
+
+## Notes on Solution
+Most of the code is the downloaded source code of the JotForm itself. The inserted code can be found in index.html within the <script> tag with comment "Added Code".
 
 
 ## Project Specification (For Reference)
