@@ -8,7 +8,7 @@ Through modification of the source code I inputed functionality that POSTs the f
 
 Overall my methodology was to get a form that meets the requirements up and running quickly and efficiently. Further functionality can be added on top.
 
-Note on POSTing to the API: Because the client side is inherently insecure, it would be necessary to validate the inputted form data on the server side, rather than the client side.
+Note on POSTing to the API: Because the client side is inherently insecure, it would be necessary to validate the inputted form data on the server side, rather than the client side. A future improvement to this code would to add a server that receives the form data submission, cleanses it of malicious data, then sends the data to the REST API.
 
 
 ## Project Specification (For Reference)
