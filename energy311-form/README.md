@@ -10,6 +10,9 @@ Overall my methodology was to get a form that meets the requirements up and runn
 
 Note on POSTing to the API: Because the client side is inherently insecure, it would be necessary to validate the inputted form data on the server side, rather than the client side. A future improvement to this code would to add a server that receives the form data submission, cleanses it of malicious data, then sends the data to the REST API.
 
+## Notes on Solution
+Most of the code is the downloaded source code of the JotForm itself. The inserted code can be found in index.html within the <script> tag with comment "Added Code".
+
 
 ## Project Specification (For Reference)
 
