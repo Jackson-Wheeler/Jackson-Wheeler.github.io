@@ -511,13 +511,10 @@ li img {
  --EXPERIENCE-- 
 ************/
 #work > section {
-    margin: 3rem 0;
+    margin: 1.5rem 0;
 }
 #work > section:first-of-type {
     margin-top: 0.5rem;
-}
-#work > section:last-of-type {
-    margin-bottom: 0.5rem;
 }
 
 
