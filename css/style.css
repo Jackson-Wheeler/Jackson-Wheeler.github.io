@@ -465,6 +465,9 @@ strong {
     border-collapse: collapse;
     margin-top: 0.5em;
 }
+.skillTable td {
+    width: 100%;
+}
 .skillTable th, .skillTable td {
     border: var(--box-border-lv2);
     padding: 0.5em;
